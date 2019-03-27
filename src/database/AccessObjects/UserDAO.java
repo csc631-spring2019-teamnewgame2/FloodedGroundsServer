@@ -28,8 +28,9 @@ public interface UserDAO {
     public User validateUserCredentials(String loginName, String password);
 
     /**
+     *
      * @param user
-     * @return
+     * @return an updated User Object with generated values, or null if the username/email are already taken
      */
     public User createUser(User user);
 
