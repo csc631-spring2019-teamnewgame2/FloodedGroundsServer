@@ -1,11 +1,13 @@
-package dataAccessLayer;
+package database;
 
 // Java Imports
+
+import configuration.DBConf;
+import utility.ConfFileParser;
+
 import javax.sql.DataSource;
 
 // Other Imports
-import configuration.DBConf;
-import utility.ConfFileParser;
 
 /**
  * The GameDB class configures the database connection by using information

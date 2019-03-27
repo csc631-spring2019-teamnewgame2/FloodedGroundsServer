@@ -8,12 +8,40 @@ package database.AccessObjects;
 import database.Models.User;
 
 /**
- *
  * @author Travis
  */
 public interface UserDAO {
+    /**
+     * @param ID
+     * @return
+     */
     public User getUserByID(int ID);
-    public boolean createUser(User user);
-    public boolean updateUser(User user);
-    public boolean deleteUser(User user);
+
+    /**
+     * Validates User Credentials exist in database, and returns the relevant User
+     * object, or null, if the User credentials don't match a database entry
+     *
+     * @param loginName A username or email
+     * @param password
+     * @return Valid User object, or null, if no User is found
+     */
+    public User validateUserCredentials(String loginName, String password);
+
+    /**
+     * @param user
+     * @return
+     */
+    public User createUser(User user);
+
+    /**
+     * @param user
+     * @return
+     */
+    public User updateUser(User user);
+
+    /**
+     * @param user
+     * @return
+     */
+    public User deleteUser(User user);
 }

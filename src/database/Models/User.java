@@ -17,28 +17,28 @@ public class User {
     private String userName;
     private String email;
     private String password;
-    private Timestamp joinDate;
-    private Timestamp lastLogin;
-    private int gamesPlayed;
-    private int wins;
-    private int losses;
+    private Timestamp joined;
+    private Timestamp lastOnline;
+    private int played;
+    private int won;
+    private int lost;
 
     public User() {
     }
 
     public User(int ID,
-            String userName, String email, String password,
-            Timestamp joinDate, Timestamp lastLogin,
-            int gamesPlayed, int wins, int losses) {
+                String userName, String email, String password,
+                Timestamp joined, Timestamp lastOnline,
+                int played, int won, int lost) {
         this.ID = ID;
         this.userName = userName;
         this.email = email;
         this.password = password;
-        this.joinDate = joinDate;
-        this.lastLogin = lastLogin;
-        this.gamesPlayed = gamesPlayed;
-        this.wins = wins;
-        this.losses = losses;
+        this.joined = joined;
+        this.lastOnline = lastOnline;
+        this.played = played;
+        this.won = won;
+        this.lost = lost;
     }
 
     public int getID() {
@@ -57,28 +57,28 @@ public class User {
         return this.password;
     }
 
-    public Timestamp getJoinDate() {
-        return this.joinDate;
+    public Timestamp getJoined() {
+        return this.joined;
     }
 
     public Timestamp getLasLogin() {
-        return this.lastLogin;
+        return this.lastOnline;
     }
 
-    public int getGamesPlayed() {
-        return this.gamesPlayed;
+    public int getPlayed() {
+        return this.played;
     }
 
-    public int getWins() {
-        return this.wins;
+    public int getWon() {
+        return this.won;
     }
 
-    public int getLosses() {
-        return this.losses;
+    public int getLost() {
+        return this.lost;
     }
 
-    public int setID(int id) {
-        return this.ID = id;
+    public int setID(int ID) {
+        return this.ID = ID;
     }
 
     public String setUserName(String userName) {
@@ -93,23 +93,23 @@ public class User {
         return this.password = password;
     }
 
-    public Timestamp setJoinDate(Timestamp joinDate) {
-        return this.joinDate = joinDate;
+    public Timestamp setJoined(Timestamp joined) {
+        return this.joined = joined;
     }
 
-    public Timestamp setLasLogin(Timestamp lastLogin) {
-        return this.lastLogin = lastLogin;
+    public Timestamp setLastOnline(Timestamp lastOnline) {
+        return this.lastOnline = lastOnline;
     }
 
-    public int setGamesPlayed(int gamesPlayed) {
-        return this.gamesPlayed = gamesPlayed;
+    public int setPlayed(int played) {
+        return this.played = played;
     }
 
-    public int setWins(int wins) {
-        return this.wins = wins;
+    public int setWon(int won) {
+        return this.won = won;
     }
 
-    public int setLosses(int losses) {
-        return this.losses = losses;
+    public int setLost(int lost) {
+        return this.lost = lost;
     }
 }

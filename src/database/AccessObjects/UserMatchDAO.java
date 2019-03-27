@@ -5,14 +5,15 @@
  */
 package database.AccessObjects;
 
-import database.Models.PlayerMatch;
+import database.Models.UserMatch;
+
 import java.util.List;
 
 /**
- *
  * @author Travis
  */
-public interface PlayerMatchDAO {
-    public PlayerMatch getPlayerMatchByID(int ID);
-    public List<PlayerMatch> getAllPlayerMatchesByPlayerID(int ID);
+public interface UserMatchDAO {
+    public UserMatch getUserMatchByID(int ID);
+
+    public List<UserMatch> getAllUserMatchesByUserID(int ID);
 }

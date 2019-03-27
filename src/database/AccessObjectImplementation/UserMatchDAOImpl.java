@@ -5,26 +5,24 @@
  */
 package database.AccessObjectImplementation;
 
-import database.AccessObjects.PlayerMatchDAO;
-import database.Models.PlayerMatch;
+import database.AccessObjects.UserMatchDAO;
+import database.Models.UserMatch;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
-
-
 /**
- *
  * @author Travis
  */
-public class PlayerMatchDAOImpl implements PlayerMatchDAO {
+public class UserMatchDAOImpl implements UserMatchDAO {
     @Override
-    public PlayerMatch getPlayerMatchByID(int ID){
-        return new PlayerMatch();
+    public UserMatch getUserMatchByID(int ID) {
+        return new UserMatch();
     }
-    
+
     @Override
-    public List<PlayerMatch> getAllPlayerMatchesByPlayerID(int ID){
+    public List<UserMatch> getAllUserMatchesByUserID(int ID) {
         return new ArrayList<>();
     }
 }

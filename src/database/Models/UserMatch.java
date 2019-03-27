@@ -9,7 +9,7 @@ package database.Models;
  *
  * @author Travis
  */
-public class PlayerMatch {
+public class UserMatch {
     private int ID;
     private int role;
     private int attacksMade;

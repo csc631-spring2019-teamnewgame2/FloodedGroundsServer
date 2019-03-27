@@ -1,4 +1,4 @@
-package dataAccessLayer;
+package database;
 
 // Java Imports
 import javax.sql.DataSource;
@@ -76,8 +76,7 @@ public class ConnectionPool {
          * Finally, we create the PoolingDriver itself,
          * passing in the object pool we created.
          */
-        PoolingDataSource dataSource = new PoolingDataSource(connectionPool);
 
-        return dataSource;
+        return new PoolingDataSource(connectionPool);
     }
 }
