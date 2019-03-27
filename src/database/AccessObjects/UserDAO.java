@@ -34,14 +34,18 @@ public interface UserDAO {
     public User createUser(User user);
 
     /**
+     * Updates LastOnline, Played, Won, and Lost values for the selected User in the Database
+     *
      * @param user
      * @return
      */
-    public User updateUser(User user);
+    public boolean updateUser(User user);
 
     /**
+     *
      * @param user
+     * @param newPassword
      * @return
      */
-    public User deleteUser(User user);
+    public boolean updateUserPassword(User user, String oldPassword, String newPassword);
 }
