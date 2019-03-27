@@ -7,6 +7,7 @@ package database.AccessObjects;
 
 import database.Models.Lobby;
 import database.Models.User;
+
 import java.util.List;
 
 /**
@@ -18,4 +19,6 @@ public interface LobbyDAO {
     public List<Lobby> getAllLobbies();
     public Lobby getLobbyByName(String name);
     public Lobby getLobbyByOwner(User owner);
+    public boolean createLobby(Lobby lobby, User user);
+    public boolean deleteLobby(Lobby lobby, User user);
 }
