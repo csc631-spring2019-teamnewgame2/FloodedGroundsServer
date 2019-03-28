@@ -6,7 +6,6 @@
 package database.Models;
 
 /**
- *
  * @author Travis
  */
 public class UserMatch {
@@ -16,72 +15,87 @@ public class UserMatch {
     private int attacksHit;
     private int timesDowned;
     private int aliveAtEnd;
-    
+
     //foreign key vaules
     private int matchID;
     private int playerID;
-    
-    public int getID(){
+
+    public UserMatch() {
+    }
+
+    public UserMatch(int ID, int role, int attacksMade, int attacksHit,
+                     int timesDowned, int aliveAtEnd, int matchID, int playerID) {
+        this.ID = ID;
+        this.role = role;
+        this.attacksMade = attacksMade;
+        this.attacksHit = attacksHit;
+        this.timesDowned = timesDowned;
+        this.aliveAtEnd = aliveAtEnd;
+        this.matchID = matchID;
+        this.playerID = playerID;
+    }
+
+    public int getID() {
         return this.ID;
     }
-    
-    public int getRole(){
+
+    public int getRole() {
         return this.role;
     }
-    
-    public int getAttacksMade(){
+
+    public int getAttacksMade() {
         return this.attacksMade;
     }
-    
-    public int getAttacksHit(){
+
+    public int getAttacksHit() {
         return this.attacksHit;
     }
-    
-    public int getTimesDowned(){
+
+    public int getTimesDowned() {
         return this.timesDowned;
     }
-    
-    public int getAliveAtEnd(){
+
+    public int getAliveAtEnd() {
         return this.aliveAtEnd;
     }
-    
-    public int getMatchID(){
+
+    public int getMatchID() {
         return this.matchID;
     }
-    
-    public int getPlayerID(){
+
+    public int getPlayerID() {
         return this.playerID;
     }
-    
-    public int setID(int id){
+
+    public int setID(int id) {
         return this.ID = id;
     }
-    
-    public int setRole(int role){
+
+    public int setRole(int role) {
         return this.role = role;
     }
-    
-    public int setAttacksMade(int attacksMade){
+
+    public int setAttacksMade(int attacksMade) {
         return this.attacksMade = attacksMade;
     }
-    
-    public int setAttacksHit(int attacksHit){
+
+    public int setAttacksHit(int attacksHit) {
         return this.attacksHit = attacksHit;
     }
-    
-    public int setTimesDowned(int timesDowned){
+
+    public int setTimesDowned(int timesDowned) {
         return this.timesDowned = timesDowned;
     }
-    
-    public int setAliveAtEnd(int aliveAtEnd){
+
+    public int setAliveAtEnd(int aliveAtEnd) {
         return this.aliveAtEnd = aliveAtEnd;
     }
-    
-    public int setMatchID(int matchID){
+
+    public int setMatchID(int matchID) {
         return this.matchID = matchID;
     }
-    
-    public int setPlayerID(int playerID){
+
+    public int setPlayerID(int playerID) {
         return this.playerID = playerID;
     }
 }   
