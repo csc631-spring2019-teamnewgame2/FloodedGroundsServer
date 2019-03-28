@@ -33,7 +33,7 @@ public class UserDAOImpl implements UserDAO {
 
             rs = ps.executeQuery();
 
-            while (rs != null && rs.next()) {
+            while (rs.next()) {
                 ID = rs.getInt("ID");
                 String username = rs.getString("username");
                 String email = rs.getString("email");
@@ -49,7 +49,6 @@ public class UserDAOImpl implements UserDAO {
             e.printStackTrace();
         }
         return user;
-
     }
 
     @Override
@@ -98,8 +97,8 @@ public class UserDAOImpl implements UserDAO {
             ps.setString(1, user.getUserName());
             ps.setString(2, user.getEmail());
             ps.setString(3, user.getPassword());
-            if(ps.executeUpdate() == 0)
-                return null;
+            ps.executeUpdate();
+
             try (ResultSet rs = ps.getGeneratedKeys()) {
                 if (rs.next()) {
                     user.setID(rs.getInt("ID"));
@@ -154,7 +153,7 @@ public class UserDAOImpl implements UserDAO {
         PreparedStatement ps = null;
 
         try {
-            if ((user.getPassword() != oldPassword) ||
+            if (!(user.getPassword().equals(oldPassword)) ||
                     (validateUserCredentials(user.getUserName(), oldPassword) == null))
                 return false;
 
