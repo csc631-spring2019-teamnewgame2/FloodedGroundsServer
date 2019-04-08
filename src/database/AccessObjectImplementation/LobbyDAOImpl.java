@@ -11,6 +11,7 @@ import database.Models.Lobby;
 import database.Models.User;
 
 import java.sql.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -167,6 +168,40 @@ public class LobbyDAOImpl implements LobbyDAO {
             success = true;
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+        return success;
+    }
+
+    @Override
+    public boolean addPlayerToLobby(Lobby lobby, User user) {
+        boolean success = false;
+        int playerNum = 0;
+        String query = "";
+        for (int i = 1; i < 4; i++) {
+            if (lobby.getPlayer(i) == 0) {
+                query = "UPDATE Lobby SET `player" + i + "` = ? WHERE `ID` = ?";
+                success = true;
+                break;
+            }
+        }
+
+        if (success) {
+            success = false;
+            ResultSet rs = null;
+            Connection connection = null;
+            PreparedStatement ps = null;
+
+            try {
+                connection = DCM.getDataSource().getConnection();
+                ps = connection.prepareStatement(query);
+                ps.setInt(1, user.getID());
+                ps.setInt(2, lobby.getID());
+                ps.executeUpdate();
+                ps.close();
+                success = true;
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return success;
     }
