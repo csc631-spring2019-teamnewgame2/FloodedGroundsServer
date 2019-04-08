@@ -13,6 +13,17 @@ import java.util.List;
  * @author Travis
  */
 public interface MatchDAO {
+    /**
+     *
+     * @param ID
+     * @return
+     */
     public Match getMatchByID(int ID);
+
+    /**
+     *
+     * @param ID
+     * @return
+     */
     public List<Match> getMatchesByUserID(int ID);
 }
