@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df59fed-18e9-44a0-adf2-2320067ede9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/FloodedGroundsServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FloodedGroundsServer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/AccessObjectImplementation/MatchDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjectImplementation/MatchDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/AccessObjects/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjects/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/DCM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DCM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/Models/UserMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Models/UserMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/AccessObjects/MatchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjects/MatchDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Models/Lobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Models/Lobby.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,16 +24,51 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="120" column="41" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
+            <state relative-caret-position="459">
+              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="111" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getUserByID#0;class#UserDAOImpl#0" />
                 <element signature="method#validateUserCredentials#0;class#UserDAOImpl#0" />
                 <element signature="method#createUser#0;class#UserDAOImpl#0" />
-                <element signature="method#updateUser#0;class#UserDAOImpl#0" />
-                <element signature="e#4434#4843#0" />
                 <element signature="method#updateUserPassword#0;class#UserDAOImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/Models/Lobby.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#0#1866#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1465#1466#0" expanded="true" />
+                <element signature="e#1495#1496#0" expanded="true" />
+                <element signature="e#1526#1527#0" expanded="true" />
+                <element signature="e#1558#1559#0" expanded="true" />
+                <element signature="e#1593#1594#0" expanded="true" />
+                <element signature="e#1629#1630#0" expanded="true" />
+                <element signature="e#1660#1661#0" expanded="true" />
+                <element signature="e#1695#1696#0" expanded="true" />
+                <element signature="e#1863#1864#0" expanded="true" />
+                <element signature="e#1901#1902#0" expanded="true" />
+                <element signature="e#1932#1933#0" expanded="true" />
+                <element signature="e#1970#1971#0" expanded="true" />
+                <element signature="e#2001#2002#0" expanded="true" />
+                <element signature="e#2039#2040#0" expanded="true" />
+                <element signature="e#2070#2071#0" expanded="true" />
+                <element signature="e#2108#2109#0" expanded="true" />
+                <element signature="e#2140#2141#0" expanded="true" />
+                <element signature="e#2175#2176#0" expanded="true" />
+                <element signature="e#2217#2218#0" expanded="true" />
+                <element signature="e#2256#2257#0" expanded="true" />
+                <element signature="e#2306#2307#0" expanded="true" />
+                <element signature="e#2353#2354#0" expanded="true" />
+                <element signature="e#2395#2396#0" expanded="true" />
+                <element signature="e#2440#2441#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +77,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/DCM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+            <state relative-caret-position="439">
+              <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/GameDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,8 +101,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="289">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding>
+                <element signature="method#getAllLobbies#0;class#LobbyDAOImpl#0" />
+                <element signature="method#getLobbyByID#0;class#LobbyDAOImpl#0" />
+                <element signature="method#getLobbyByName#0;class#LobbyDAOImpl#0" />
+                <element signature="method#getLobbyByOwner#0;class#LobbyDAOImpl#0" />
+                <element signature="method#createLobby#0;class#LobbyDAOImpl#0" />
+                <element signature="method#addPlayerToLobby#0;class#LobbyDAOImpl#0" />
+                <element signature="method#deleteLobby#0;class#LobbyDAOImpl#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,34 +144,25 @@
         <entry file="file://$PROJECT_DIR$/src/database/Models/UserMatch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/MatchDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding>
-                <element signature="method#getMatchByID#0;class#MatchDAOImpl#0" />
-                <element signature="method#getMatchesByUserID#0;class#MatchDAOImpl#0" />
-              </folding>
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getUserMatchByID#0;class#UserMatchDAOImpl#0" />
-                <element signature="method#getAllUserMatchesByUserID#0;class#UserMatchDAOImpl#0" />
-              </folding>
+            <state relative-caret-position="629">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/MatchDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -103,6 +173,7 @@
     <findStrings>
       <find>outbuil</find>
       <find>int</find>
+      <find>owner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/database/DatabaseConnectionManager.java" />
         <option value="$PROJECT_DIR$/src/configuration/GameServerConf.java" />
         <option value="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReference.java" />
-        <option value="$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java" />
         <option value="$PROJECT_DIR$/src/database/GameDB.java" />
         <option value="$PROJECT_DIR$/src/database/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/conf/db.conf" />
@@ -127,12 +197,15 @@
         <option value="$PROJECT_DIR$/src/database/AccessObjects/UserDAO.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/database/DCM.java" />
-        <option value="$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java" />
         <option value="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/database/AccessObjectImplementation/MatchDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/database/Models/UserMatch.java" />
+        <option value="$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/database/Models/Lobby.java" />
+        <option value="$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java" />
+        <option value="$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java" />
+        <option value="$PROJECT_DIR$/src/database/AccessObjects/MatchDAO.java" />
       </list>
     </option>
   </component>
@@ -205,6 +278,14 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="AccessObjects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="Models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
@@ -216,7 +297,7 @@
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553684730891" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -262,7 +343,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10607676" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -298,6 +379,12 @@
           <line>89</line>
           <properties />
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -351,16 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/ConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -399,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
@@ -420,74 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/GameDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/Models/Lobby.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#1866#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/DCM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="120" column="41" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getUserByID#0;class#UserDAOImpl#0" />
-            <element signature="method#validateUserCredentials#0;class#UserDAOImpl#0" />
-            <element signature="method#createUser#0;class#UserDAOImpl#0" />
-            <element signature="method#updateUser#0;class#UserDAOImpl#0" />
-            <element signature="e#4434#4843#0" />
-            <element signature="method#updateUserPassword#0;class#UserDAOImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="method#getAllLobbies#0;class#LobbyDAOImpl#0" />
-            <element signature="method#getLobbyByID#0;class#LobbyDAOImpl#0" />
-            <element signature="method#getLobbyByName#0;class#LobbyDAOImpl#0" />
-            <element signature="method#getLobbyByOwner#0;class#LobbyDAOImpl#0" />
-            <element signature="method#createLobby#0;class#LobbyDAOImpl#0" />
-            <element signature="method#deleteLobby#0;class#LobbyDAOImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/Models/Match.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -498,17 +500,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/MatchDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="459">
+          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getUserByID#0;class#UserDAOImpl#0" />
+            <element signature="method#validateUserCredentials#0;class#UserDAOImpl#0" />
+            <element signature="method#createUser#0;class#UserDAOImpl#0" />
+            <element signature="method#updateUserPassword#0;class#UserDAOImpl#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
+        <state>
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getUserMatchByID#0;class#UserMatchDAOImpl#0" />
@@ -517,21 +526,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/Models/UserMatch.java">
+    <entry file="file://$PROJECT_DIR$/src/database/Models/Lobby.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#1866#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+            <element signature="e#1629#1630#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1863#1864#0" expanded="true" />
+            <element signature="e#1901#1902#0" expanded="true" />
+            <element signature="e#1932#1933#0" expanded="true" />
+            <element signature="e#1970#1971#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#2175#2176#0" expanded="true" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2306#2307#0" expanded="true" />
+            <element signature="e#2353#2354#0" expanded="true" />
+            <element signature="e#2395#2396#0" expanded="true" />
+            <element signature="e#2440#2441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/DCM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/GameDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="method#getAllLobbies#0;class#LobbyDAOImpl#0" />
+            <element signature="method#getLobbyByID#0;class#LobbyDAOImpl#0" />
+            <element signature="method#getLobbyByName#0;class#LobbyDAOImpl#0" />
+            <element signature="method#getLobbyByOwner#0;class#LobbyDAOImpl#0" />
+            <element signature="method#createLobby#0;class#LobbyDAOImpl#0" />
+            <element signature="method#addPlayerToLobby#0;class#LobbyDAOImpl#0" />
+            <element signature="method#deleteLobby#0;class#LobbyDAOImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/MatchDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="136">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="method#getMatchByID#0;class#MatchDAOImpl#0" />
             <element signature="method#getMatchesByUserID#0;class#MatchDAOImpl#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/Models/UserMatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/MatchDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
         </state>
       </provider>
     </entry>
