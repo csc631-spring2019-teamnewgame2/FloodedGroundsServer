@@ -66,7 +66,7 @@ public class User {
         return this.joined;
     }
 
-    public Timestamp getLasLogin() {
+    public Timestamp getLastLogin() {
         return this.lastOnline;
     }
 
