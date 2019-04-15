@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df59fed-18e9-44a0-adf2-2320067ede9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/AccessObjects/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjects/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/UserTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,18 +15,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+            <state relative-caret-position="434">
+              <caret line="144" selection-start-line="144" selection-end-line="144" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getUserByID#0;class#UserDAOImpl#0" />
                 <element signature="method#validateUserCredentials#0;class#UserDAOImpl#0" />
                 <element signature="method#createUser#0;class#UserDAOImpl#0" />
                 <element signature="method#updateUser#0;class#UserDAOImpl#0" />
-                <element signature="method#updateUserPassword#0;class#UserDAOImpl#0" />
               </folding>
             </state>
           </provider>
@@ -38,6 +36,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
               <caret line="70" selection-start-line="70" selection-end-line="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/Models/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="97" column="39" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,25 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="904">
-              <caret line="168" column="9" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
-              <folding>
-                <element signature="method#getAllLobbies#0;class#LobbyDAOImpl#0" />
-                <element signature="method#getLobbyByID#0;class#LobbyDAOImpl#0" />
-                <element signature="method#getLobbyByName#0;class#LobbyDAOImpl#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/UserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+            <state relative-caret-position="343">
+              <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/DatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
+            <state relative-caret-position="412">
               <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -201,9 +197,9 @@
         <option value="$PROJECT_DIR$/src/database/Models/User.java" />
         <option value="$PROJECT_DIR$/test/DatabaseTest.java" />
         <option value="$PROJECT_DIR$/conf/db.conf" />
-        <option value="$PROJECT_DIR$/test/UserTest.java" />
         <option value="$PROJECT_DIR$/src/database/AccessObjects/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/test/UserTest.java" />
       </list>
     </option>
   </component>
@@ -288,6 +284,14 @@
               <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
@@ -297,7 +301,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555330433681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555330831411" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -368,7 +372,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1913646" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1913646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -378,7 +382,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997923" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -410,12 +414,6 @@
           <line>191</line>
           <properties />
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java</url>
-          <line>144</line>
-          <properties />
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -633,16 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/Models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/MatchDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -716,7 +704,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/DatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
+        <state relative-caret-position="412">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -724,12 +712,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/UserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+        <state relative-caret-position="434">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getUserByID#0;class#UserDAOImpl#0" />
+            <element signature="method#validateUserCredentials#0;class#UserDAOImpl#0" />
+            <element signature="method#createUser#0;class#UserDAOImpl#0" />
+            <element signature="method#updateUser#0;class#UserDAOImpl#0" />
           </folding>
         </state>
       </provider>
@@ -749,17 +741,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/database/Models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+        <state relative-caret-position="275">
+          <caret line="97" column="39" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getUserByID#0;class#UserDAOImpl#0" />
-            <element signature="method#validateUserCredentials#0;class#UserDAOImpl#0" />
-            <element signature="method#createUser#0;class#UserDAOImpl#0" />
-            <element signature="method#updateUser#0;class#UserDAOImpl#0" />
-            <element signature="method#updateUserPassword#0;class#UserDAOImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

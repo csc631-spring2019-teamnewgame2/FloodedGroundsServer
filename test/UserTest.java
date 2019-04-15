@@ -28,33 +28,25 @@ public class UserTest {
     }
 
     public boolean testCreate(){
-        try {
-            for (int i = 0; i < 3; i++) {
-                user = dao.createUser(new User(userNames[i], email + "" + i, password));
-                userIDs[i] = user.getID();
-            }
-            System.out.println(user.getID());
+        boolean success = true;
+        for (int i = 0; i < 3; i++) {
+            user = dao.createUser(new User(userNames[i], email + "" + i, password));
+            if(user == null) success = false;
+            userIDs[i] = user.getID();
         }
-        catch(SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
-        return true;
+
+        System.out.println(user.getID());
+
+        return success;
     }
 
     public boolean testGetUserByID(){
         boolean success = true;
-        try {
             for (int i = 0; i < 3; i++) {
                 user = dao.getUserByID(userIDs[i]);
                 if (!user.getUserName().equals(userNames[i])) success = false;
             }
             System.out.println(user.getID());
-        }
-        catch(SQLException e) {
-            e.printStackTrace();
-            success = false;
-        }
         return success;
     }
 
@@ -62,45 +54,24 @@ public class UserTest {
         boolean success = false;
         lastOnline = Timestamp.valueOf(LocalDateTime.now());
         user.setLastOnline(lastOnline);
-        try {
-            dao.updateUser(user);
-            success = true;
-        }
-        catch(SQLException e){
-            e.printStackTrace();
-        }
-
+        success = dao.updateUser(user);
         return success;
     }
 
     public boolean testUpdatePassword(){
         boolean success = false;
         lastOnline = Timestamp.valueOf(LocalDateTime.now());
-        try {
-            dao.updateUserPassword(user,password,password2);
-            success = true;
-        }
-        catch(SQLException e){
-            e.printStackTrace();
-        }
-
+        success = dao.updateUserPassword(user,password,password2);
         return success;
     }
 
     public boolean testValidateCredentials(){
         boolean success = false;
-        lastOnline = Timestamp.valueOf(LocalDateTime.now());
         String username = user.getUserName();
-        String pw = user.getPassword();
-        try {
-            user = dao.validateUserCredentials(username, pw);
-            if(user.getUserName().equals(username))
-                success = true;
-        }
-        catch(SQLException e){
-            e.printStackTrace();
-        }
-
+        String pw = password2;
+        user = dao.validateUserCredentials(username, pw);
+        if(user != null)
+            success = true;
         return success;
     }
 }
