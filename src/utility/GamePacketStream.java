@@ -1,10 +1,11 @@
 package utility;
 
 // Java Imports
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.Calendar;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * The GamePacketStream contain methods that pushes the response information as
