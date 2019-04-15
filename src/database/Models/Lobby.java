@@ -5,9 +5,6 @@
  */
 package database.Models;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author Travis
  */
@@ -17,6 +14,7 @@ public class Lobby {
     private String name;
     private String password;
     private int privacy;
+    private boolean passwordRequired;
 
     // foreign key values -- move these to an array, instead
     //    private int owner;
@@ -25,7 +23,7 @@ public class Lobby {
     //    private int player3;
 
     // this is to store playerID in a easily accessible form
-    private int[] players = new int[4];
+    private long[] players = new long[4];
 
     public Lobby() {
     }
@@ -38,14 +36,14 @@ public class Lobby {
      * @param owner
      */
     public Lobby(int ID, String name, String password,
-                 int privacy, int owner){
+                 int privacy, long owner){
         this(ID, name, password, privacy, owner, 0,0,0);
     }
 
     public Lobby(int ID,
                  String name, String password,
-                 int privacy, int owner,
-                 int player1, int player2, int player3) {
+                 int privacy, long owner,
+                 long player1, long player2, long player3) {
         this.ID = ID;
         this.name = name;
         this.password = password;
@@ -73,8 +71,8 @@ public class Lobby {
         return this.privacy;
     }
 
-    public int getPlayer(int playerNum) {
-        int playerID = 0;
+    public long getPlayer(int playerNum) {
+        long playerID = 0;
         try {
             playerID = players[playerNum];
         }catch(IndexOutOfBoundsException e){
@@ -83,36 +81,44 @@ public class Lobby {
         return playerID;
     }
 
-    public int getOwner() {
+    public long getOwner() {
         return this.players[0];
     }
 
-    public int getPlayer1() {
+    public long getPlayer1() {
         return this.players[1];
     }
 
-    public int getPlayer2() {
+    public long getPlayer2() {
         return this.players[2];
     }
 
-    public int getPlayer3() {
+    public long getPlayer3() {
         return this.players[3];
     }
 
-    public int setID(int ID) {
-        return this.ID = ID;
+    public boolean getPasswordRequired() {
+        return passwordRequired;
     }
 
-    public String setName(String name) {
-        return this.name = name;
+    public void setPasswordRequired(boolean passwordRequired) {
+        this.passwordRequired = passwordRequired;
     }
 
-    public String setPassword(String password) {
-        return this.password = password;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
-    public int setPrivacy(int privacy) {
-        return this.privacy = privacy;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setPrivacy(int privacy) {
+        this.privacy = privacy;
     }
 
     /**
@@ -120,32 +126,27 @@ public class Lobby {
      * @param UserID    the playerID you wish to add to the object
      * @return
      */
-    public int setPlayer(int playerNum, int UserID) throws IndexOutOfBoundsException {
+    public void setPlayer(int playerNum, int UserID) {
         try {
             players[playerNum] = UserID;
         }catch(IndexOutOfBoundsException e){
             e.printStackTrace();
         }
-        return playerNum;
     }
 
-    public int setOwner(int owner) {
+    public void setOwner(int owner) {
         players[0] = owner;
-        return this.players[0];
     }
 
-    public int setPlayer1(int player) {
+    public void setPlayer1(int player) {
         players[1] = player;
-        return this.players[1];
     }
 
-    public int setPlayer2(int player) {
+    public void setPlayer2(int player) {
         players[2] = player;
-        return this.players[2];
     }
 
-    public int setPlayer3(int player) {
+    public void setPlayer3(int player) {
         players[4] = player;
-        return this.players[3];
     }
 }

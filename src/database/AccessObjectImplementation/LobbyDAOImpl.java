@@ -11,7 +11,6 @@ import database.Models.Lobby;
 import database.Models.User;
 
 import java.sql.*;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -129,7 +128,7 @@ public class LobbyDAOImpl implements LobbyDAO {
         try {
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);
-            ps.setInt(1, owner.getID());
+            ps.setLong(1, owner.getID());
 
             rs = ps.executeQuery();
 
@@ -138,9 +137,9 @@ public class LobbyDAOImpl implements LobbyDAO {
                 String name = rs.getString("name");
                 String password = rs.getString("password");
                 int privacy = rs.getInt("privacy");
-                int player1 = rs.getInt("player1");
-                int player2 = rs.getInt("player2");
-                int player3 = rs.getInt("player3");
+                long player1 = rs.getLong("player1");
+                long player2 = rs.getLong("player2");
+                long player3 = rs.getLong("player3");
                 lobby = new Lobby(ID, name, password, privacy, owner.getID(), player1, player2, player3);
             }
         } catch (SQLException e) {
@@ -153,16 +152,15 @@ public class LobbyDAOImpl implements LobbyDAO {
     public boolean createLobby(Lobby lobby, User user) {
         boolean success = false;
         String query = "INSERT INTO Lobby(ID, name, privacy, password, owner) VALUES(?,?,?,?,?)";
-        Connection connection = null;
-        PreparedStatement ps = null;
 
         try {
-            connection = DCM.getDataSource().getConnection();
-            ps = connection.prepareStatement(query);
+            Connection connection = DCM.getDataSource().getConnection();
+            PreparedStatement ps = connection.prepareStatement(query);
+            ps.setLong(1, lobby.getID());
             ps.setString(2, lobby.getName());
             ps.setInt(3, lobby.getPrivacy());
             ps.setString(4, lobby.getPassword());
-            ps.setInt(5, user.getID());
+            ps.setLong(5, user.getID());
             ps.executeUpdate();
             ps.close();
             success = true;
@@ -194,7 +192,7 @@ public class LobbyDAOImpl implements LobbyDAO {
             try {
                 connection = DCM.getDataSource().getConnection();
                 ps = connection.prepareStatement(query);
-                ps.setInt(1, user.getID());
+                ps.setLong(1, user.getID());
                 ps.setInt(2, lobby.getID());
                 ps.executeUpdate();
                 ps.close();
@@ -217,7 +215,7 @@ public class LobbyDAOImpl implements LobbyDAO {
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);
             ps.setInt(1, lobby.getID());
-            ps.setInt(2, user.getID());
+            ps.setLong(2, user.getID());
             ps.executeUpdate();
             ps.close();
             success = true;
