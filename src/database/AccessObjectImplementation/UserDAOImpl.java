@@ -37,7 +37,7 @@ public class UserDAOImpl implements UserDAO {
                 ID = rs.getInt("ID");
                 String username = rs.getString("username");
                 String email = rs.getString("email");
-                String password = "";
+                String password = rs.getString("password");
                 Timestamp joined = rs.getTimestamp("joined");
                 Timestamp lastOnline = rs.getTimestamp("joined");
                 int played = rs.getInt("played");
@@ -132,6 +132,7 @@ public class UserDAOImpl implements UserDAO {
             ps.setInt(2, user.getPlayed());
             ps.setInt(3, user.getWon());
             ps.setInt(4, user.getLost());
+            ps.setLong(5, user.getID());
             ps.executeUpdate();
             ps.close();
             success = true;
@@ -146,16 +147,16 @@ public class UserDAOImpl implements UserDAO {
     public boolean updateUserPassword(User user, String oldPassword, String newPassword) throws SQLException {
 
         boolean success = false;
-        String query = "UPDATE Users Set password = ? WHERE ID = ?";
+        String query = "UPDATE User Set password = ? WHERE ID = ?";
 
         ResultSet rs = null;
         Connection connection = null;
         PreparedStatement ps = null;
 
         try {
-            if (!(user.getPassword().equals(oldPassword)) ||
-                    (validateUserCredentials(user.getUserName(), oldPassword) == null))
+            if ((validateUserCredentials(user.getUserName(), oldPassword) == null)) {
                 return false;
+            }
 
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);

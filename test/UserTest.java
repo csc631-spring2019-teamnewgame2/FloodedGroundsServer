@@ -14,7 +14,7 @@ public class UserTest {
     private long[] userIDs = new long[3];
     private String email = "test@email.mail";
     private String password = "testPassword";
-    private String password2 = "testPassword2";
+    private String password2 = "changedPassword";
     private Timestamp joined;
     private Timestamp lastOnline;
     private int played;
@@ -30,7 +30,7 @@ public class UserTest {
     public boolean testCreate(){
         try {
             for (int i = 0; i < 3; i++) {
-                user = dao.createUser(new User(userNames[i], email, password));
+                user = dao.createUser(new User(userNames[i], email + "" + i, password));
                 userIDs[i] = user.getID();
             }
             System.out.println(user.getID());
@@ -47,7 +47,7 @@ public class UserTest {
         try {
             for (int i = 0; i < 3; i++) {
                 user = dao.getUserByID(userIDs[i]);
-                if (user.getUserName() != userNames[i]) success = false;
+                if (!user.getUserName().equals(userNames[i])) success = false;
             }
             System.out.println(user.getID());
         }
@@ -88,13 +88,12 @@ public class UserTest {
     }
 
     public boolean testValidateCredentials(){
-
         boolean success = false;
         lastOnline = Timestamp.valueOf(LocalDateTime.now());
         String username = user.getUserName();
         String pw = user.getPassword();
         try {
-            user = dao.validateUserCredentials(username,pw);
+            user = dao.validateUserCredentials(username, pw);
             if(user.getUserName().equals(username))
                 success = true;
         }
@@ -104,6 +103,4 @@ public class UserTest {
 
         return success;
     }
-
-
 }
