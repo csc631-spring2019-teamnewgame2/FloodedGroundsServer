@@ -7,6 +7,8 @@ package database.AccessObjects;
 
 import database.Models.User;
 
+import java.sql.SQLException;
+
 /**
  * @author Travis
  */
@@ -15,7 +17,7 @@ public interface UserDAO {
      * @param ID
      * @return
      */
-    public User getUserByID(int ID);
+    public User getUserByID(long ID) throws SQLException;
 
     /**
      * Validates User Credentials exist in database, and returns the relevant User
@@ -25,13 +27,13 @@ public interface UserDAO {
      * @param password
      * @return Valid User object, or null, if no User is found
      */
-    public User validateUserCredentials(String loginName, String password);
+    public User validateUserCredentials(String loginName, String password) throws SQLException;
 
     /**
      * @param user
      * @return
      */
-    public User createUser(User user);
+    public User createUser(User user) throws SQLException;
 
     /**
      * Updates LastOnline, Played, Won, and Lost values for the selected User in the Database
@@ -39,7 +41,7 @@ public interface UserDAO {
      * @param user
      * @return
      */
-    public boolean updateUser(User user);
+    public boolean updateUser(User user) throws SQLException;
 
     /**
      *
@@ -47,5 +49,5 @@ public interface UserDAO {
      * @param newPassword
      * @return
      */
-    public boolean updateUserPassword(User user, String oldPassword, String newPassword);
+    public boolean updateUserPassword(User user, String oldPassword, String newPassword) throws SQLException;
 }

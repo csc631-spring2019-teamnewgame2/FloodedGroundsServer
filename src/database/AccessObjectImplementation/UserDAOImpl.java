@@ -18,8 +18,8 @@ import java.time.LocalDateTime;
 public class UserDAOImpl implements UserDAO {
 
     @Override
-    public User getUserByID(int ID) {
-        String query = "SELECT * FROM users WHERE ID = ?";
+    public User getUserByID(long ID) throws SQLException {
+        String query = "SELECT * FROM User WHERE ID = ?";
 
         User user = null;
         ResultSet rs = null;
@@ -29,7 +29,7 @@ public class UserDAOImpl implements UserDAO {
         try {
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);
-            ps.setInt(1, ID);
+            ps.setLong(1, ID);
 
             rs = ps.executeQuery();
 
@@ -47,13 +47,14 @@ public class UserDAOImpl implements UserDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            throw e;
         }
         return user;
     }
 
     @Override
-    public User validateUserCredentials(String loginName, String password) {
-        String query = "SELECT * FROM users WHERE (username = ? OR email = ?) AND password = ?";
+    public User validateUserCredentials(String loginName, String password) throws SQLException {
+        String query = "SELECT * FROM User WHERE (username = ? OR email = ?) AND password = ?";
 
         User user = null;
         ResultSet rs = null;
@@ -81,13 +82,14 @@ public class UserDAOImpl implements UserDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            throw e;
         }
         return user;
     }
 
     @Override
-    public User createUser(User user) {
-        String query = "INSERT INTO Users(username, email, password) VALUES(?,?,?)";
+    public User createUser(User user) throws SQLException {
+        String query = "INSERT INTO User(username, email, password) VALUES(?,?,?)";
         Connection connection = null;
         PreparedStatement ps = null;
 
@@ -101,26 +103,23 @@ public class UserDAOImpl implements UserDAO {
 
             try (ResultSet rs = ps.getGeneratedKeys()) {
                 if (rs.next()) {
-                    user.setID(rs.getInt("ID"));
-                    user.setJoined(rs.getTimestamp("joined"));
-                    user.setLastOnline(rs.getTimestamp("lastOnline"));
-                    user.setPlayed(rs.getInt("played"));
-                    user.setWon(rs.getInt("won"));
-                    user.setLost(rs.getInt("lost"));
+                    user.setID(rs.getLong(1));
                 }
             } catch (SQLException s) {
                 s.printStackTrace();
+                throw s;
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            throw e;
         }
         return user;
     }
 
     @Override
-    public boolean updateUser(User user) {
+    public boolean updateUser(User user) throws SQLException {
         boolean success = false;
-        String query = "UPDATE Users Set `LastOnline` = ?, `Played` = ?, `Won` = ?, `Lost` = ? WHERE `ID` = ?";
+        String query = "UPDATE User Set `LastOnline` = ?, `Played` = ?, `Won` = ?, `Lost` = ? WHERE `ID` = ?";
 
         ResultSet rs = null;
         Connection connection = null;
@@ -138,12 +137,13 @@ public class UserDAOImpl implements UserDAO {
             success = true;
         } catch (SQLException e) {
             e.printStackTrace();
+            throw e;
         }
         return success;
     }
 
     @Override
-    public boolean updateUserPassword(User user, String oldPassword, String newPassword) {
+    public boolean updateUserPassword(User user, String oldPassword, String newPassword) throws SQLException {
 
         boolean success = false;
         String query = "UPDATE Users Set password = ? WHERE ID = ?";
@@ -160,12 +160,13 @@ public class UserDAOImpl implements UserDAO {
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);
             ps.setString(1, newPassword);
-            ps.setInt(2, user.getID());
+            ps.setLong(2, user.getID());
             ps.executeUpdate();
             ps.close();
             success = true;
         } catch (SQLException e) {
             e.printStackTrace();
+            throw e;
         }
         return success;
     }

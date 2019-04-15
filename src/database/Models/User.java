@@ -5,15 +5,15 @@
  */
 package database.Models;
 
-import java.sql.*;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 /**
- *
  * @author Travis
  */
 public class User {
 
-    private int ID;
+    private long ID;
     private String userName;
     private String email;
     private String password;
@@ -26,14 +26,13 @@ public class User {
     public User() {
     }
 
-    public User(String userName, String email, String password){
-        this.userName = userName;
-        this.email = email;
-        this.password = password;
+    public User(String userName, String email, String password) {
+        this(0L, userName, email, password,
+                Timestamp.valueOf(LocalDateTime.now()), Timestamp.valueOf(LocalDateTime.now()),
+                0, 0, 0);
     }
 
-    public User(int ID,
-                String userName, String email, String password,
+    public User(long ID, String userName, String email, String password,
                 Timestamp joined, Timestamp lastOnline,
                 int played, int won, int lost) {
         this.ID = ID;
@@ -47,7 +46,7 @@ public class User {
         this.lost = lost;
     }
 
-    public int getID() {
+    public long getID() {
         return this.ID;
     }
 
@@ -83,7 +82,7 @@ public class User {
         return this.lost;
     }
 
-    public int setID(int ID) {
+    public long setID(long ID) {
         return this.ID = ID;
     }
 
