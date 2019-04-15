@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 public class UserDAOImpl implements UserDAO {
 
     @Override
-    public User getUserByID(long ID) throws SQLException {
+    public User getUserByID(long ID) {
         String query = "SELECT * FROM User WHERE ID = ?";
 
         User user = null;
@@ -47,13 +47,12 @@ public class UserDAOImpl implements UserDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e;
         }
         return user;
     }
 
     @Override
-    public User validateUserCredentials(String loginName, String password) throws SQLException {
+    public User validateUserCredentials(String loginName, String password) {
         String query = "SELECT * FROM User WHERE (username = ? OR email = ?) AND password = ?";
 
         User user = null;
@@ -82,13 +81,12 @@ public class UserDAOImpl implements UserDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e;
         }
         return user;
     }
 
     @Override
-    public User createUser(User user) throws SQLException {
+    public User createUser(User user) {
         String query = "INSERT INTO User(username, email, password) VALUES(?,?,?)";
         Connection connection = null;
         PreparedStatement ps = null;
@@ -111,13 +109,12 @@ public class UserDAOImpl implements UserDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e;
         }
         return user;
     }
 
     @Override
-    public boolean updateUser(User user) throws SQLException {
+    public boolean updateUser(User user) {
         boolean success = false;
         String query = "UPDATE User Set `LastOnline` = ?, `Played` = ?, `Won` = ?, `Lost` = ? WHERE `ID` = ?";
 
@@ -138,13 +135,12 @@ public class UserDAOImpl implements UserDAO {
             success = true;
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e;
         }
         return success;
     }
 
     @Override
-    public boolean updateUserPassword(User user, String oldPassword, String newPassword) throws SQLException {
+    public boolean updateUserPassword(User user, String oldPassword, String newPassword) {
 
         boolean success = false;
         String query = "UPDATE User Set password = ? WHERE ID = ?";
@@ -167,7 +163,6 @@ public class UserDAOImpl implements UserDAO {
             success = true;
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e;
         }
         return success;
     }

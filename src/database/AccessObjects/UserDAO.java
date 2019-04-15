@@ -17,7 +17,7 @@ public interface UserDAO {
      * @param ID
      * @return
      */
-    public User getUserByID(long ID) throws SQLException;
+    public User getUserByID(long ID);
 
     /**
      * Validates User Credentials exist in database, and returns the relevant User
@@ -27,13 +27,13 @@ public interface UserDAO {
      * @param password
      * @return Valid User object, or null, if no User is found
      */
-    public User validateUserCredentials(String loginName, String password) throws SQLException;
+    public User validateUserCredentials(String loginName, String password);
 
     /**
      * @param user
      * @return
      */
-    public User createUser(User user) throws SQLException;
+    public User createUser(User user);
 
     /**
      * Updates LastOnline, Played, Won, and Lost values for the selected User in the Database
@@ -41,7 +41,7 @@ public interface UserDAO {
      * @param user
      * @return
      */
-    public boolean updateUser(User user) throws SQLException;
+    public boolean updateUser(User user);
 
     /**
      *
@@ -49,5 +49,5 @@ public interface UserDAO {
      * @param newPassword
      * @return
      */
-    public boolean updateUserPassword(User user, String oldPassword, String newPassword) throws SQLException;
+    public boolean updateUserPassword(User user, String oldPassword, String newPassword);
 }
