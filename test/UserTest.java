@@ -34,19 +34,15 @@ public class UserTest {
             if(user == null) success = false;
             userIDs[i] = user.getID();
         }
-
-        System.out.println(user.getID());
-
         return success;
     }
 
     public boolean testGetUserByID(){
         boolean success = true;
-            for (int i = 0; i < 3; i++) {
-                user = dao.getUserByID(userIDs[i]);
-                if (!user.getUserName().equals(userNames[i])) success = false;
-            }
-            System.out.println(user.getID());
+        for (int i = 0; i < 3; i++) {
+            user = dao.getUserByID(userIDs[i]);
+            if (!user.getUserName().equals(userNames[i])) success = false;
+        }
         return success;
     }
 

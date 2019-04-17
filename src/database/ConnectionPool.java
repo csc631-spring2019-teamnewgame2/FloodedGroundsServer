@@ -72,7 +72,6 @@ public class ConnectionPool {
         PoolableConnectionFactory poolableConnectionFactory = new PoolableConnectionFactory(
                 connectionFactory, connectionPool, null, "SELECT * FROM User LIMIT 0, 1000", false, true);
 
-        connectionPool.setFactory(poolableConnectionFactory);
         /*
          * Finally, we create the PoolingDriver itself,
          * passing in the object pool we created.
