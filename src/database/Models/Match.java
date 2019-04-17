@@ -11,31 +11,31 @@ package database.Models;
  */
 public class Match {
 
-    private int ID;
+    private long ID;
     private int endState;
     private int endTime;
 
     // foreign key values
-    private int monster;
-    private int player1;
-    private int player2;
-    private int player3;
+    private long monster;
+    private long survivor1;
+    private long survivor2;
+    private long survivor3;
 
     public Match() {
     }
 
-    public Match(int ID, int endState, int endTime,
-            int monster, int player1, int player2, int player3) {
+    public Match(long ID, int endState, int endTime,
+                 long monster, long survivor1, long survivor2, long survivor3) {
         this.ID = ID;
         this.endState = endState;
         this.endTime = endTime;
         this.monster = monster;
-        this.player1 = player1;
-        this.player2 = player2;
-        this.player3 = player3;
+        this.survivor1 = survivor1;
+        this.survivor2 = survivor2;
+        this.survivor3 = survivor3;
     }
 
-    public int getID() {
+    public long getID() {
         return this.ID;
     }
 
@@ -47,23 +47,23 @@ public class Match {
         return this.endTime;
     }
 
-    public int getMonster() {
+    public long getMonster() {
         return this.monster;
     }
 
-    public int getPlayer1() {
-        return this.player1;
+    public long getSurvivor1() {
+        return this.survivor1;
     }
 
-    public int getPlayer2() {
-        return this.player2;
+    public long getSurvivor2() {
+        return this.survivor2;
     }
 
-    public int getPlayer3() {
-        return this.player3;
+    public long getSurvivor3() {
+        return this.survivor3;
     }
 
-    public int setID(int ID) {
+    public long setID(long ID) {
         return this.ID = ID;
     }
 
@@ -75,19 +75,19 @@ public class Match {
         return this.endTime = endTime;
     }
 
-    public int setMonster(int monster) {
+    public long setMonster(long monster) {
         return this.monster = monster;
     }
 
-    public int setPlayer1(int player1) {
-        return this.player1 = player1;
+    public long setSurvivor1(long survivor) {
+        return this.survivor1 = survivor;
     }
 
-    public int setPlayer2(int player2) {
-        return this.player2 = player2;
+    public long setSurvivor2(long survivor) {
+        return this.survivor2 = survivor;
     }
 
-    public int setPlayer3(int player3) {
-        return this.player3 = player3;
+    public long setSurvivor3(long survivor) {
+        return this.survivor3 = survivor;
     }
 }

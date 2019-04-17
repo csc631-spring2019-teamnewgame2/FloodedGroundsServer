@@ -9,7 +9,7 @@ package database.Models;
  * @author Travis
  */
 public class UserMatch {
-    private int ID;
+    private long ID;
     private int role;
     private int attacksMade;
     private int attacksHit;
@@ -17,14 +17,14 @@ public class UserMatch {
     private int aliveAtEnd;
 
     //foreign key vaules
-    private int matchID;
-    private int playerID;
+    private long matchID;
+    private long playerID;
 
     public UserMatch() {
     }
 
-    public UserMatch(int ID, int role, int attacksMade, int attacksHit,
-                     int timesDowned, int aliveAtEnd, int matchID, int playerID) {
+    public UserMatch(long ID, int role, int attacksMade, int attacksHit,
+                     int timesDowned, int aliveAtEnd, long matchID, long playerID) {
         this.ID = ID;
         this.role = role;
         this.attacksMade = attacksMade;
@@ -35,7 +35,7 @@ public class UserMatch {
         this.playerID = playerID;
     }
 
-    public int getID() {
+    public long getID() {
         return this.ID;
     }
 
@@ -59,15 +59,15 @@ public class UserMatch {
         return this.aliveAtEnd;
     }
 
-    public int getMatchID() {
+    public long getMatchID() {
         return this.matchID;
     }
 
-    public int getPlayerID() {
+    public long getPlayerID() {
         return this.playerID;
     }
 
-    public int setID(int id) {
+    public long setID(long id) {
         return this.ID = id;
     }
 
@@ -91,11 +91,11 @@ public class UserMatch {
         return this.aliveAtEnd = aliveAtEnd;
     }
 
-    public int setMatchID(int matchID) {
+    public long setMatchID(long matchID) {
         return this.matchID = matchID;
     }
 
-    public int setPlayerID(int playerID) {
+    public long setPlayerID(long playerID) {
         return this.playerID = playerID;
     }
 }   

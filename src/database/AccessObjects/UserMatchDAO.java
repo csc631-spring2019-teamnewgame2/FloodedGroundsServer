@@ -18,12 +18,14 @@ public interface UserMatchDAO {
      * @param ID
      * @return
      */
-    public UserMatch getUserMatchByID(int ID);
+    public UserMatch getUserMatchByID(long ID);
 
     /**
      *
      * @param ID
      * @return
      */
-    public List<UserMatch> getAllUserMatchesByUserID(int ID);
+    public List<UserMatch> getAllUserMatchesByUserID(long ID);
+
+    public boolean createUserMatch(UserMatch userMatch);
 }

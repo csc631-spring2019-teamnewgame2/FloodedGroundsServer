@@ -7,7 +7,6 @@ package database.AccessObjectImplementation;
 
 import database.AccessObjects.MatchDAO;
 import database.DCM;
-import database.Models.Lobby;
 import database.Models.Match;
 
 import java.sql.Connection;
@@ -22,7 +21,7 @@ import java.util.List;
  */
 public class MatchDAOImpl implements MatchDAO {
     @Override
-    public Match getMatchByID(int ID) {
+    public Match getMatchByID(long ID) {
         String query = "SELECT * FROM match WHERE ID = ?";
 
         Match match = null;
@@ -33,18 +32,18 @@ public class MatchDAOImpl implements MatchDAO {
         try {
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);
-            ps.setInt(1, ID);
+            ps.setLong(1, ID);
             rs = ps.executeQuery();
 
             while (rs.next()) {
                 int endState = rs.getInt("endState");
                 int endTime = rs.getInt("endTime");
-                int monster = rs.getInt("monster");
-                int player1 = rs.getInt("player1");
-                int player2 = rs.getInt("player2");
-                int player3 = rs.getInt("player3");
+                long monster = rs.getLong("monster");
+                long survivor1 = rs.getLong("Survivor1");
+                long survivor2 = rs.getLong("Survivor2");
+                long survivor3 = rs.getLong("Survivor3");
                 match = new Match(ID, endState, endTime,
-                        monster, player1, player2, player3);
+                        monster, survivor1, survivor2, survivor3);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -53,8 +52,8 @@ public class MatchDAOImpl implements MatchDAO {
     }
 
     @Override
-    public List<Match> getMatchesByUserID(int userID) {
-        String query = "SELECT * FROM match WHERE (monster = ? OR player1 = ? OR player2 = ? OR player3 = ?)";
+    public List<Match> getMatchesByUserID(long userID) {
+        String query = "SELECT * FROM match WHERE (monster = ? OR Survivor1 = ? OR Survivor2 = ? OR Survivor3 = ?)";
 
         List<Match> matchList = new ArrayList<>();
         Match match = null;
@@ -65,27 +64,52 @@ public class MatchDAOImpl implements MatchDAO {
         try {
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);
-            ps.setInt(1, userID);
-            ps.setInt(2, userID);
-            ps.setInt(3, userID);
-            ps.setInt(4, userID);
+            ps.setLong(1, userID);
+            ps.setLong(2, userID);
+            ps.setLong(3, userID);
+            ps.setLong(4, userID);
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                int ID = rs.getInt("id");
+                long ID = rs.getLong("id");
                 int endState = rs.getInt("endState");
                 int endTime = rs.getInt("endTime");
-                int monster = rs.getInt("monster");
-                int player1 = rs.getInt("player1");
-                int player2 = rs.getInt("player2");
-                int player3 = rs.getInt("player3");
+                long monster = rs.getLong("monster");
+                long survivor1 = rs.getLong("Survivor1");
+                long survivor2 = rs.getLong("Survivor2");
+                long survivor3 = rs.getLong("Survivor3");
                 match = new Match(ID, endState, endTime,
-                        monster, player1, player2, player3);
+                        monster, survivor1, survivor2, survivor3);
                 matchList.add(match);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return matchList;
+    }
+
+    @Override
+    public boolean createMatch(Match match){
+        boolean success = false;
+
+        String query = "INSERT INTO Match(endState, endTime, monster," +
+                "Survivor1, Survivor2, Survivor3) VALUES(?,?,?,?,?,?,?)";
+
+        try {
+            Connection connection = DCM.getDataSource().getConnection();
+            PreparedStatement ps = connection.prepareStatement(query);
+            ps.setInt(1, match.getEndState());
+            ps.setInt(2, match.getEndTime());
+            ps.setLong(3, match.getMonster());
+            ps.setLong(4, match.getSurvivor1());
+            ps.setLong(5, match.getSurvivor2());
+            ps.setLong(6, match.getSurvivor3());
+            ps.executeUpdate();
+            ps.close();
+            success = true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return success;
     }
 }

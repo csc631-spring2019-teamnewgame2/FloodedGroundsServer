@@ -10,7 +10,7 @@ package database.Models;
  */
 public class Lobby {
 
-    private int ID;
+    private long ID;
     private String name;
     private String password;
     private int privacy;
@@ -35,12 +35,12 @@ public class Lobby {
      * @param privacy
      * @param owner
      */
-    public Lobby(int ID, String name, String password,
+    public Lobby(long ID, String name, String password,
                  int privacy, long owner){
         this(ID, name, password, privacy, owner, 0,0,0);
     }
 
-    public Lobby(int ID,
+    public Lobby(long ID,
                  String name, String password,
                  int privacy, long owner,
                  long player1, long player2, long player3) {
@@ -55,7 +55,7 @@ public class Lobby {
         this.players[3] = player3;
     }
 
-    public int getID() {
+    public long getID() {
         return this.ID;
     }
 
@@ -105,7 +105,7 @@ public class Lobby {
         this.passwordRequired = passwordRequired;
     }
 
-    public void setID(int ID) {
+    public void setID(long ID) {
         this.ID = ID;
     }
 

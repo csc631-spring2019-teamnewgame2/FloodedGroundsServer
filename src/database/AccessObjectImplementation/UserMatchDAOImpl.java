@@ -23,7 +23,7 @@ import java.util.List;
  */
 public class UserMatchDAOImpl implements UserMatchDAO {
     @Override
-    public UserMatch getUserMatchByID(int ID) {
+    public UserMatch getUserMatchByID(long ID) {
         String query = "SELECT * FROM match WHERE ID = ?";
 
         UserMatch userMatch = null;
@@ -34,7 +34,7 @@ public class UserMatchDAOImpl implements UserMatchDAO {
         try {
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);
-            ps.setInt(1, ID);
+            ps.setLong(1, ID);
             rs = ps.executeQuery();
 
             while (rs.next()) {
@@ -43,8 +43,8 @@ public class UserMatchDAOImpl implements UserMatchDAO {
                 int attacksHit = rs.getInt("attacksHit");
                 int timesDowned = rs.getInt("timesDowned");
                 int aliveAtEnd = rs.getInt("aliveAtEnd");
-                int matchID = rs.getInt("matchID");
-                int playerID = rs.getInt("playerID");
+                long matchID = rs.getLong("matchID");
+                long playerID = rs.getLong("playerID");
                 userMatch = new UserMatch(ID, role, attacksMade, attacksHit,
                         timesDowned, aliveAtEnd, matchID, playerID);
             }
@@ -55,8 +55,8 @@ public class UserMatchDAOImpl implements UserMatchDAO {
     }
 
     @Override
-    public List<UserMatch> getAllUserMatchesByUserID(int userID) {
-        String query = "SELECT * FROM match WHERE userID = ?";
+    public List<UserMatch> getAllUserMatchesByUserID(long userID) {
+        String query = "SELECT * FROM match WHERE PlayerID = ?";
 
         List<UserMatch> userMatchList = new ArrayList<>();
         UserMatch userMatch = null;
@@ -67,17 +67,17 @@ public class UserMatchDAOImpl implements UserMatchDAO {
         try {
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);
-            ps.setInt(1, userID);
+            ps.setLong(1, userID);
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                int ID = rs.getInt("ID");
+                long ID = rs.getLong("ID");
                 int role = rs.getInt("role");
                 int attacksMade = rs.getInt("attacksMade");
                 int attacksHit = rs.getInt("attacksHit");
                 int timesDowned = rs.getInt("timesDowned");
                 int aliveAtEnd = rs.getInt("aliveAtEnd");
-                int matchID = rs.getInt("matchID");
+                long matchID = rs.getLong("matchID");
                 userMatch = new UserMatch(ID, role, attacksMade, attacksHit,
                         timesDowned, aliveAtEnd, matchID, userID);
                 userMatchList.add(userMatch);
@@ -86,5 +86,31 @@ public class UserMatchDAOImpl implements UserMatchDAO {
             e.printStackTrace();
         }
         return userMatchList;
+    }
+
+    @Override
+    public boolean createUserMatch(UserMatch userMatch){
+        boolean success = false;
+
+        String query = "INSERT INTO UserMatch(role, attacksMade, attacksHit, timesDowned," +
+                "aliveAtEnd, MatchID, PlayerID) VALUES(?,?,?,?,?,?,?)";
+
+        try {
+            Connection connection = DCM.getDataSource().getConnection();
+            PreparedStatement ps = connection.prepareStatement(query);
+            ps.setInt(1, userMatch.getRole());
+            ps.setInt(2, userMatch.getAttacksMade());
+            ps.setInt(3, userMatch.getAttacksHit());
+            ps.setInt(4, userMatch.getTimesDowned());
+            ps.setInt(5, userMatch.getAliveAtEnd());
+            ps.setLong(6, userMatch.getMatchID());
+            ps.setLong(7, userMatch.getPlayerID());
+            ps.executeUpdate();
+            ps.close();
+            success = true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return success;
     }
 }
