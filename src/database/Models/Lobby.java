@@ -5,6 +5,7 @@
  */
 package database.Models;
 
+import java.util.ArrayList;
 /**
  * @author Travis
  */
@@ -23,7 +24,7 @@ public class Lobby {
     //    private int player3;
 
     // this is to store playerID in a easily accessible form
-    private long[] players = new long[4];
+    private ArrayList<Long> playerList = new ArrayList<>();
 
     public Lobby() {
     }
@@ -49,10 +50,10 @@ public class Lobby {
         this.password = password;
         this.privacy = privacy;
 
-        this.players[0] = owner;
-        this.players[1] = player1;
-        this.players[2] = player2;
-        this.players[3] = player3;
+        this.playerList.add(owner);
+        this.playerList.add(player1);
+        this.playerList.add(player2);
+        this.playerList.add(player3);
     }
 
     public long getID() {
@@ -74,7 +75,7 @@ public class Lobby {
     public long getPlayer(int playerNum) {
         long playerID = 0;
         try {
-            playerID = players[playerNum];
+            playerID = playerList.get(playerNum);
         }catch(IndexOutOfBoundsException e){
             e.printStackTrace();
         }
@@ -82,23 +83,24 @@ public class Lobby {
     }
 
     public long getOwner() {
-        return this.players[0];
+        return this.playerList.get(0);
+
     }
 
     public long getPlayer1() {
-        return this.players[1];
+        return this.playerList.get(1);
     }
 
     public long getPlayer2() {
-        return this.players[2];
+        return this.playerList.get(2);
     }
 
     public long getPlayer3() {
-        return this.players[3];
+        return this.playerList.get(3);
     }
 
     public boolean getPasswordRequired() {
-        return passwordRequired;
+        return this.passwordRequired;
     }
 
     public void setPasswordRequired(boolean passwordRequired) {
@@ -123,30 +125,30 @@ public class Lobby {
 
     /**
      * @param playerNum the player you wish to set, 0 for owner, 1-3 for others
-     * @param UserID    the playerID you wish to add to the object
+     * @param userID    the playerID you wish to add to the object
      * @return
      */
-    public void setPlayer(int playerNum, int UserID) {
+    public void setPlayer(int playerNum, long userID) {
         try {
-            players[playerNum] = UserID;
+            playerList.set(playerNum, userID);
         }catch(IndexOutOfBoundsException e){
             e.printStackTrace();
         }
     }
 
-    public void setOwner(int owner) {
-        players[0] = owner;
+    public void setOwner(long owner) {
+        this.playerList.set(0, owner);
     }
 
-    public void setPlayer1(int player) {
-        players[1] = player;
+    public void setPlayer1(long player) {
+        this.playerList.set(1, player);
     }
 
-    public void setPlayer2(int player) {
-        players[2] = player;
+    public void setPlayer2(long player) {
+        this.playerList.set(2, player);
     }
 
-    public void setPlayer3(int player) {
-        players[4] = player;
+    public void setPlayer3(long player) {
+        this.playerList.set(3, player);
     }
 }
