@@ -4,9 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4df59fed-18e9-44a0-adf2-2320067ede9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/LobbyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/LobbyTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="4df59fed-18e9-44a0-adf2-2320067ede9b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,114 +14,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java">
+        <entry file="file://$PROJECT_DIR$/conf/db.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="64" column="14" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/gameServer.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/lib/commons-dbcp-1.4.jar!/org/apache/commons/dbcp/PoolingDataSource.class">
+        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="74" column="52" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/MatchDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+            <state relative-caret-position="496">
+              <caret line="218" selection-start-line="218" selection-end-line="218" />
               <folding>
-                <element signature="method#getMatchByID#0;class#MatchDAOImpl#0" />
-                <element signature="method#getMatchesByUserID#0;class#MatchDAOImpl#0" />
-                <element signature="method#createMatch#0;class#MatchDAOImpl#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/DCM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
-              <folding>
-                <element signature="e#1135#1136#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/UserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/ConnectionPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="79" column="51" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/DatabaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/commons-pool-1.6.jar!/org/apache/commons/pool/ObjectPool.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/GameDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="41" column="57" lean-forward="true" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#createUserMatch#0;class#UserMatchDAOImpl#0" />
+                <element signature="e#0#862#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,21 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
@@ -254,26 +153,22 @@
               <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
             <path>
-              <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -351,8 +246,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -412,48 +308,20 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/utility/Log.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NodeParameters.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoRequest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkResponse.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkResponse.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoRequest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkOnlyRequest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingResponse.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsRequest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewPositions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NodeParameters.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkOnlyRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewPositions.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReference.java" />
     <entry file="file://$PROJECT_DIR$/conf/gameServer.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -551,8 +419,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/db.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="51">
+          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -627,15 +495,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="168" column="23" lean-forward="true" selection-start-line="151" selection-start-column="8" selection-end-line="168" selection-end-column="23" />
+        <state relative-caret-position="496">
+          <caret line="218" selection-start-line="218" selection-end-line="218" />
           <folding>
-            <element signature="method#getAllLobbies#0;class#LobbyDAOImpl#0" />
-            <element signature="method#getLobbyByID#0;class#LobbyDAOImpl#0" />
-            <element signature="method#getLobbyByName#0;class#LobbyDAOImpl#0" />
-            <element signature="method#getLobbyByOwner#0;class#LobbyDAOImpl#0" />
-            <element signature="method#updateLobbyPlayers#0;class#LobbyDAOImpl#0" />
-            <element signature="method#deleteLobby#0;class#LobbyDAOImpl#0" />
+            <element signature="e#0#862#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -707,20 +570,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Critters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Manipulation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Critters.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Manipulation.java" />
     <entry file="file://$PROJECT_DIR$/src/database/GameDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
