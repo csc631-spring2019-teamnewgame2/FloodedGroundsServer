@@ -6,8 +6,358 @@
   <component name="ChangeListManager">
     <list default="true" id="4df59fed-18e9-44a0-adf2-2320067ede9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/db.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/db.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/gameServer.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/gameServer.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/dataSources/6c81dd64-a164-4b47-84c6-03e62beb4ee0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/WoB_Server_Basic.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/conf/db.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/conf/gameServer.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/activation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/axis.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/commons-discovery-0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/commons-pool-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/gson-2.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/javax.wsdl_1.6.2.v201012040545.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/jaxrpc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/json_simple-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/mysql-connector-java-5.1.22-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/saaj.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/configuration/DBConf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/configuration/GameServerConf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/core/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/GameClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/core/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/core/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/NetworkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/dataAccessLayer/ConnectionPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/dataAccessLayer/DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/dataAccessLayer/GameDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/log/WoB_Data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/metadata/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metadata/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/metadata/GameRequestTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metadata/GameRequestTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Models/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Authentication/RequestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Authentication/RequestRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Authentication/RequestRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/GameRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/GameRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestCreateLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestCreateLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestGetLobbies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestGetLobbies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestJoinGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestJoinGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestJoinLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestJoinLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestStartGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestStartGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/RequestHeartbeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/RequestHeartbeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/RequestPushUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/RequestPushUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Authentication/ResponseLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Authentication/ResponseRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Authentication/ResponseRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/GameResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/GameResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseCreateLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseCreateLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseGetLobbies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseGetLobbies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseJoinGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseJoinGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseJoinLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseJoinLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseStartGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseStartGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/ResponseHeartbeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/ResponseHeartbeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/BiomassNodeProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Critters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/EnergyFlowLink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/LinkParameters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Links.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Manipulation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationBiomassNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationNetwork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationTimesteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ModelNodeProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewColorItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewColors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewCtrlSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewGLViewInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewPositions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewSizeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NetworkACL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NetworkParameters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Networks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NodeParameters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Nodes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/TextureImages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Timeseries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Timesteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/UserLoginInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/UserVote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingNodeProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulationParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ModelParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/NetworkModelTypeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/NodeBiomass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/TimestepEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/WebProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data/EntityKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data/EntityKeyMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfCrittershovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfEnergyFlowLinkhovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfLinkshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationBiomassNodehovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationModelhovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationRequesthovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationhovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewColorshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewCtrlSettinghovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewGLViewInfohovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewPositionshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewSizeInfohovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetworkshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNodeshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfTimeserieshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfUserhovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/RelatedEnd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/StructuralObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CreateFoodwebRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CreateFoodwebResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CritterRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CritterResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationLinkTimestepInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkMatrixRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkMatrixResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkModelTypeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkModelTypeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameListRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameListResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkOnlyRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkRemoveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkSaveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkSearchRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/SimpleManipulationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TableLoaderInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TextureImagesRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TextureImagesResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeStepsSearchRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesRemoveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesSaveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesSearchRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsSaveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/UserRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/UserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebAnalysisResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebPropertyRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebPropertyResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteManipulationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteManipulationRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteNetworkCreationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteNetworkCreationRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/IN3DService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/IN3DServiceProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/tempuri/BasicHttpBinding_IN3DServiceStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/tempuri/N3DWebService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/tempuri/N3DWebServiceLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/sql/wob_basic_db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/ConfFileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/ConfFileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/GamePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/GamePacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/GamePacketStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/GamePacketStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/conf/db.conf" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/conf/db.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/BiomassNodeProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Critters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/EnergyFlowLink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/LinkParameters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Links.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Manipulation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationBiomassNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationNetwork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationTimesteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ModelNodeProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewColorItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewColors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewCtrlSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewGLViewInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewPositions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewSizeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NetworkACL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NetworkParameters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Networks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NodeParameters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Nodes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/TextureImages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Timeseries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Timesteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/UserLoginInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/UserVote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingNodeProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulationParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ModelParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/NetworkModelTypeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/NodeBiomass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/TimestepEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/WebProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data/EntityKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data/EntityKeyMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfCrittershovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfEnergyFlowLinkhovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfLinkshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationBiomassNodehovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationModelhovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationRequesthovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationhovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewColorshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewCtrlSettinghovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewGLViewInfohovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewPositionshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewSizeInfohovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetworkshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNodeshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfTimeserieshovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfUserhovVakal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/RelatedEnd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/StructuralObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CreateFoodwebRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CreateFoodwebResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CritterRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CritterResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationLinkTimestepInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkMatrixRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkMatrixResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkModelTypeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkModelTypeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameListRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameListResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkOnlyRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkRemoveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkSaveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkSearchRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/SimpleManipulationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TableLoaderInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TextureImagesRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TextureImagesResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeStepsSearchRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesRemoveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesSaveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesSearchRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsSaveRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/UserRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/UserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebAnalysisResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebPropertyRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebPropertyResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteManipulationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteManipulationRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteNetworkCreationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteNetworkCreationRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteRequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/IN3DService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/IN3DServiceProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/tempuri/BasicHttpBinding_IN3DServiceStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/tempuri/N3DWebService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/tempuri/N3DWebServiceLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/ConfFileParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/DataReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/GamePacket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/GamePacketStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/Log.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,29 +366,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/GameDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/db.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="51">
+              <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/gameServer.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -48,89 +386,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/configuration/GameServerConf.java">
+        <entry file="file://$PROJECT_DIR$/src/core/GameClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/GameServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/NetworkManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/metadata/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/metadata/GameRequestTable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="94" column="26" lean-forward="true" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#2372#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#2924#2925#0" expanded="true" />
-                <element signature="e#3012#3013#0" expanded="true" />
-                <element signature="e#3100#3101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/Models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/ConnectionPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/DCM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1699#1700#0" expanded="true" />
-                <element signature="e#1736#1737#0" expanded="true" />
-              </folding>
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -161,10 +459,12 @@
         <option value="$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/conf/db.conf" />
         <option value="$PROJECT_DIR$/conf/gameServer.conf" />
+        <option value="$PROJECT_DIR$/src/metadata/GameRequestTable.java" />
+        <option value="$PROJECT_DIR$/src/core/GameServer.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="707" />
     <option name="width" value="1220" />
     <option name="height" value="1087" />
@@ -177,21 +477,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
@@ -215,7 +500,20 @@
               <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="out" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="core" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -224,21 +522,20 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
             <path>
-              <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="AccessObjectImplementation" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FloodedGroundsServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FloodedGroundsServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -247,7 +544,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553678489243" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555556540910" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -255,14 +552,17 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="Z:\School\CSC 631\FloodedGrounds\FloodedGroundsServer" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="utility" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="Z:\School\CSC 631\FloodedGrounds\FloodedGroundsServer\src" />
       <recent name="Z:\School\CSC 631\FloodedGrounds\FloodedGroundsServer" />
       <recent name="Z:\School\CSC 631\FloodedGrounds\FloodedGroundsServer\src\database" />
       <recent name="Z:\School\CSC 631\FloodedGrounds\FloodedGroundsServer\conf" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\School\CSC 631\FloodedGrounds\FloodedGroundsServer" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -276,6 +576,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="core.GameServer" />
+      <module name="FloodedGroundsServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameServer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -291,35 +611,34 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="707" y="0" width="1220" height="1087" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27327585" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32914045" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49913794" weight="0.32914045" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50086206" side_tool="true" weight="0.32914045" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32914045" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49913794" weight="0.32914045" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50086206" side_tool="true" weight="0.32914045" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32914045" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3281412" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -362,7 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utility/Log.java">
+    <entry file="file://$PROJECT_DIR$/src/utility/Log.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
@@ -417,59 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/configuration/GameServerConf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/ConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/DCM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewPositions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -484,48 +750,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/Models/User.java">
+    <entry file="file://$PROJECT_DIR$/src/database/GameDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/configuration/GameServerConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjects/UserMatchDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="94" column="26" lean-forward="true" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+        <state relative-caret-position="1377">
+          <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
           <folding>
-            <element signature="e#0#2372#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#2891#2892#0" expanded="true" />
             <element signature="e#2924#2925#0" expanded="true" />
+            <element signature="e#2979#2980#0" expanded="true" />
             <element signature="e#3012#3013#0" expanded="true" />
+            <element signature="e#3067#3068#0" expanded="true" />
             <element signature="e#3100#3101#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/GameDB.java">
+    <entry file="file://$PROJECT_DIR$/src/database/Models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="442">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/ConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/db.conf">
+    <entry file="file://$PROJECT_DIR$/src/database/DCM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="663">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/Models/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/GameClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/NetworkManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metadata/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WoB_Server_Basic/src/configuration/GameServerConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WoB_Server_Basic/src/configuration/DBConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WoB_Server_Basic/src/dataAccessLayer/GameDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metadata/GameRequestTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WoB_Server_Basic/src/log/WoB_Data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WoB_Server_Basic/conf/db.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WoB_Server_Basic/conf/gameServer.conf">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/gameServer.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/db.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/GameServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
