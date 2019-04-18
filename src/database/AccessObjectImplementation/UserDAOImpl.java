@@ -166,4 +166,45 @@ public class UserDAOImpl implements UserDAO {
         }
         return success;
     }
+
+
+    public boolean verifyUniqueUsername(String userName){
+        String query = "SELECT `id` FROM User WHERE username = ?";
+        boolean success = true;
+        ResultSet rs = null;
+        Connection connection = null;
+        PreparedStatement ps = null;
+
+        try {
+            connection = DCM.getDataSource().getConnection();
+            ps = connection.prepareStatement(query);
+            ps.setString(1, userName);
+            rs = ps.executeQuery();
+            if (rs.next()) success = false;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return success;
+    }
+
+    public boolean verifyUniqueEmail(String email){
+        String query = "SELECT `id` FROM User WHERE email = ?";
+        boolean success = true;
+        ResultSet rs = null;
+        Connection connection = null;
+        PreparedStatement ps = null;
+
+        try {
+            connection = DCM.getDataSource().getConnection();
+            ps = connection.prepareStatement(query);
+            ps.setString(1, email);
+            rs = ps.executeQuery();
+            if (rs.next()) success = false;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return success;
+    }
 }

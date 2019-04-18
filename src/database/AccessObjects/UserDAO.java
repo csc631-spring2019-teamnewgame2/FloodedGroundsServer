@@ -50,4 +50,18 @@ public interface UserDAO {
      * @return
      */
     public boolean updateUserPassword(User user, String oldPassword, String newPassword);
+
+    /**
+     * Verify that the given UserName is not being used by an existing account
+     * @param username
+     * @return
+     */
+    public boolean verifyUniqueUsername(String username);
+
+    /**
+     * Verify that the given email is not being used by an existing account
+     * @param email
+     * @return
+     */
+    public boolean verifyUniqueEmail(String email);
 }
