@@ -7,6 +7,7 @@ package database.Models;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import core.GameClient;
 
 /**
  * @author Travis
@@ -22,6 +23,8 @@ public class User {
     private int played;
     private int won;
     private int lost;
+
+    private GameClient client;
 
     public User() {
     }
@@ -82,6 +85,10 @@ public class User {
         return this.lost;
     }
 
+    public GameClient getClient(){
+        return this.client;
+    }
+
     public long setID(long ID) {
         return this.ID = ID;
     }
@@ -116,5 +123,9 @@ public class User {
 
     public int setLost(int lost) {
         return this.lost = lost;
+    }
+
+    public GameClient setClient(GameClient client){
+        return this.client = client;
     }
 }
