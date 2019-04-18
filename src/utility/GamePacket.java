@@ -22,7 +22,7 @@ package utility;
  */
 public class GamePacket {
 
-    private GamePacketStream buf;
+    private utility.GamePacketStream buf;
 
     public GamePacket(short responseCode) {
         buf = new GamePacketStream(responseCode);
