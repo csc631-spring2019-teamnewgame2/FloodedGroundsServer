@@ -11,11 +11,99 @@ import database.Models.User;
 
 import java.sql.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author Travis
  */
 public class UserDAOImpl implements UserDAO {
+
+    @Override
+    public List<User> getAllUsers(){
+        List<User> users = new ArrayList<>();
+        String query = "SELECT * FROM User";
+
+        User user = null;
+        ResultSet rs = null;
+        Connection connection = null;
+        PreparedStatement ps = null;
+
+        try {
+            connection = DCM.getDataSource().getConnection();
+            ps = connection.prepareStatement(query);
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+                long ID = rs.getInt("ID");
+                String username = rs.getString("username");
+                String email = rs.getString("email");
+                String password = rs.getString("password");
+                Timestamp joined = rs.getTimestamp("joined");
+                Timestamp lastOnline = rs.getTimestamp("joined");
+                int played = rs.getInt("played");
+                int won = rs.getInt("won");
+                int lost = rs.getInt("lost");
+                user = new User(ID, username, email, password, joined, lastOnline, played, won, lost);
+                users.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return users;
+    }
+
+    @Override
+    public String getUserNameByID(long ID){
+        String query = "SELECT username FROM User WHERE ID = ?";
+
+        String username = null;
+        ResultSet rs = null;
+        Connection connection = null;
+        PreparedStatement ps = null;
+
+        try {
+            connection = DCM.getDataSource().getConnection();
+            ps = connection.prepareStatement(query);
+            ps.setLong(1, ID);
+
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+                username = rs.getString("username");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return username;
+    }
+
+    @Override
+    public Map<Long,String> getAllUsernames(){
+        Map<Long,String> userMap = new HashMap<>();
+        String query = "SELECT ID, username FROM User";
+
+        ResultSet rs = null;
+        Connection connection = null;
+        PreparedStatement ps = null;
+
+        try {
+            connection = DCM.getDataSource().getConnection();
+            ps = connection.prepareStatement(query);
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+                long ID = rs.getInt("ID");
+                String username = rs.getString("username");
+                userMap.put(ID, username);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userMap;
+    }
 
     @Override
     public User getUserByID(long ID) {

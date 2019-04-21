@@ -7,12 +7,32 @@ package database.AccessObjects;
 
 import database.Models.User;
 
-import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author Travis
  */
 public interface UserDAO {
+
+    /**
+     *
+     * @return List containing all users
+     */
+    public List<User> getAllUsers();
+
+    /**
+     * @param ID User ID to look up name for
+     * @return name of User
+     */
+    public String getUserNameByID(long ID);
+
+    /**
+     *
+     * @return A map with all usernames associated with ID
+     */
+    public Map<Long,String> getAllUsernames();
+
     /**
      * @param ID
      * @return
