@@ -20,7 +20,7 @@ public interface LobbyDAO {
      * @param ID
      * @return
      */
-    public Lobby getLobbyByID(int ID);
+    public Lobby getLobbyByID(long ID);
 
     /**
      *
@@ -33,7 +33,7 @@ public interface LobbyDAO {
      * @param name
      * @return
      */
-    public Lobby getLobbyByName(String name);
+    public List<Lobby> getLobbiesByName(String name);
 
     /**
      *
@@ -45,10 +45,10 @@ public interface LobbyDAO {
     /**
      *
      * @param lobby
-     * @param user
+     * @param userID
      * @return
      */
-    public boolean createLobby(Lobby lobby, User user);
+    public boolean createLobby(Lobby lobby, Long userID);
 
     /**
      * Update an existing lobby, returning true on success, and false on failure

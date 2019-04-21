@@ -6,6 +6,7 @@
 package database.Models;
 
 import java.util.ArrayList;
+
 /**
  * @author Travis
  */
@@ -13,9 +14,9 @@ public class Lobby {
 
     private long ID;
     private String name;
-    private String password;
     private int privacy;
     private boolean passwordRequired;
+    private String password;
 
     // foreign key values -- move these to an array, instead
     //    private int owner;
@@ -36,20 +37,20 @@ public class Lobby {
      * @param privacy
      * @param owner
      */
-    public Lobby(long ID, String name, String password,
-                 int privacy, long owner){
-        this(ID, name, password, privacy, owner, 0,0,0);
+    public Lobby(long ID, String name, int privacy,
+                 boolean passwordRequired, String password,
+                 long owner) {
+        this(ID, name, privacy, passwordRequired, password, owner, 0, 0, 0);
     }
 
-    public Lobby(long ID,
-                 String name, String password,
-                 int privacy, long owner,
-                 long player1, long player2, long player3) {
+    public Lobby(long ID, String name, int privacy,
+                 boolean passwordRequired, String password,
+                 long owner, long player1, long player2, long player3) {
         this.ID = ID;
         this.name = name;
         this.password = password;
         this.privacy = privacy;
-
+        this.passwordRequired = passwordRequired;
         this.playerList.add(owner);
         this.playerList.add(player1);
         this.playerList.add(player2);
@@ -76,7 +77,7 @@ public class Lobby {
         long playerID = 0;
         try {
             playerID = playerList.get(playerNum);
-        }catch(IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             e.printStackTrace();
         }
         return playerID;
@@ -131,7 +132,7 @@ public class Lobby {
     public void setPlayer(int playerNum, long userID) {
         try {
             playerList.set(playerNum, userID);
-        }catch(IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             e.printStackTrace();
         }
     }
@@ -150,5 +151,15 @@ public class Lobby {
 
     public void setPlayer3(long player) {
         this.playerList.set(3, player);
+    }
+
+    public boolean addPlayer(Long player) {
+        if (this.playerList.size() >= 4)
+            return false;
+        return this.playerList.add(player);
+    }
+
+    public boolean removePlayer(Long player) {
+        return this.playerList.remove(player);
     }
 }
