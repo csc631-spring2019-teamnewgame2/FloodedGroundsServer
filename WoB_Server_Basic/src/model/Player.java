@@ -5,6 +5,7 @@ import core.GameClient;
 import metadata.Constants;
 import networking.response.GameResponse;
 
+import javax.security.sasl.SaslServer;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -68,7 +69,9 @@ public class Player {
 
         //Choose a random character and assign it to this player
         Random rand = new Random();
+
         int randomIndex = rand.nextInt(availableCharacters.size());
+
         this.character = availableCharacters.get(randomIndex);
         availableCharacters.remove(randomIndex);
 

@@ -11,7 +11,7 @@ public class RequestJoinGame extends GameRequest {
     private ResponseJoinGame responseJoinGame;
 
     public RequestJoinGame() {
-        this.responses.add(responseJoinGame = new ResponseJoinGame());
+        responseJoinGame = new ResponseJoinGame();
     }
 
     @Override
@@ -20,7 +20,14 @@ public class RequestJoinGame extends GameRequest {
 
     @Override
     public void doBusiness() throws Exception {
-        Log.println("Join Game Requested");
-        responseJoinGame.setCharacter(client.getPlayer().getCharacter());
+        if(!client.inGame()) {
+            Log.printf("User '%s' joined the game.", client.getPlayer().getUsername());
+
+            responseJoinGame.setCharacter(client.getPlayer().getCharacter());
+
+            client.setInGame(true);
+
+            responses.add(responseJoinGame);
+        }
     }
 }

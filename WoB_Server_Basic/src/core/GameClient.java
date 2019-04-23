@@ -35,6 +35,8 @@ public class GameClient implements Runnable {
     private InputStream inputStream; // For use with incoming requests
     private OutputStream outputStream; // For use with outgoing responses
     private DataInputStream dataInputStream; // Stores incoming requests for use
+    private boolean isLoggedIn;
+    private boolean isInGame;
     private boolean isDone;
     private Queue<GameResponse> updatesForClient; // List of responses to send to to the client
     private byte[] latestUpdateFromClient; // Stores the last update pushed from the client
@@ -58,6 +60,8 @@ public class GameClient implements Runnable {
         inputStream = clientSocket.getInputStream();
         outputStream = clientSocket.getOutputStream();
         dataInputStream = new DataInputStream(inputStream);
+        isLoggedIn = false;
+        isInGame = false;
     }
 
     /**
@@ -174,6 +178,22 @@ public class GameClient implements Runnable {
 
     public byte[] getLatestUpdateFromClient() {
         return latestUpdateFromClient;
+    }
+
+    public boolean loggedIn() {
+        return isLoggedIn;
+    }
+
+    public void setLoggedIn(boolean loggedIn) {
+        this.isLoggedIn = loggedIn;
+    }
+
+    public boolean inGame() {
+        return isInGame;
+    }
+
+    public void setInGame(boolean ingame) {
+        this.isInGame = ingame;
     }
 
     public void send(GameResponse response) throws IOException {

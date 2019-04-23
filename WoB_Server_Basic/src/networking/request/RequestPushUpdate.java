@@ -20,8 +20,6 @@ public class RequestPushUpdate extends GameRequest {
 
     @Override
     public void doBusiness() throws Exception {
-        Log.println("Push Update Requested");
-
         // Replace the player's old update with the new one
         client.setLatestUpdateFromClient(update);
     }
