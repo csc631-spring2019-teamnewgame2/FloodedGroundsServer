@@ -21,8 +21,16 @@ import java.util.Map;
  */
 public class UserDAOImpl implements UserDAO {
 
+    private static UserDAO userDao;
+
+    public static UserDAO getDao() {
+        if (userDao == null)
+            userDao = new UserDAOImpl();
+        return userDao;
+    }
+
     @Override
-    public List<User> getAllUsers(){
+    public List<User> getAllUsers() {
         List<User> users = new ArrayList<>();
         String query = "SELECT * FROM User";
 
@@ -56,7 +64,7 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public String getUserNameByID(long ID){
+    public String getUserNameByID(long ID) {
         String query = "SELECT username FROM User WHERE ID = ?";
 
         String username = null;
@@ -81,8 +89,8 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public Map<Long,String> getAllUsernames(){
-        Map<Long,String> userMap = new HashMap<>();
+    public Map<Long, String> getAllUsernames() {
+        Map<Long, String> userMap = new HashMap<>();
         String query = "SELECT ID, username FROM User";
 
         ResultSet rs = null;
@@ -255,8 +263,8 @@ public class UserDAOImpl implements UserDAO {
         return success;
     }
 
-
-    public boolean verifyUniqueUsername(String userName){
+    @Override
+    public boolean verifyUniqueUsername(String userName) {
         String query = "SELECT `id` FROM User WHERE username = ?";
         boolean success = true;
         ResultSet rs = null;
@@ -276,7 +284,8 @@ public class UserDAOImpl implements UserDAO {
         return success;
     }
 
-    public boolean verifyUniqueEmail(String email){
+    @Override
+    public boolean verifyUniqueEmail(String email) {
         String query = "SELECT `id` FROM User WHERE email = ?";
         boolean success = true;
         ResultSet rs = null;

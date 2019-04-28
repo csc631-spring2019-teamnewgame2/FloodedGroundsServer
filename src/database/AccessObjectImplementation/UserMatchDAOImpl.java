@@ -22,6 +22,13 @@ import java.util.List;
  * @author Travis
  */
 public class UserMatchDAOImpl implements UserMatchDAO {
+    private static UserMatchDAO userMatchDAO;
+    public static UserMatchDAO getDao(){
+        if(userMatchDAO == null)
+            userMatchDAO = new UserMatchDAOImpl();
+        return userMatchDAO;
+    }
+
     @Override
     public UserMatch getUserMatchByID(long ID) {
         String query = "SELECT * FROM match WHERE ID = ?";

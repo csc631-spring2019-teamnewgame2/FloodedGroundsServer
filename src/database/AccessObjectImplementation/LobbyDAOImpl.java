@@ -20,6 +20,13 @@ import java.util.List;
  */
 public class LobbyDAOImpl implements LobbyDAO {
 
+    private static LobbyDAO lobbyDAO;
+    public static LobbyDAO getDao(){
+        if(lobbyDAO == null)
+            lobbyDAO = new LobbyDAOImpl();
+        return lobbyDAO;
+    }
+
     @Override
     public List<Lobby> getAllLobbies() {
         String query = "SELECT * FROM lobby";
@@ -200,8 +207,6 @@ public class LobbyDAOImpl implements LobbyDAO {
 
         return success;
     }
-
-
 
     @Override
     public boolean deleteLobby(Lobby lobby) {
