@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a8d66fda-4466-4acd-820d-a5e18f096ef7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/dataSources/6c81dd64-a164-4b47-84c6-03e62beb4ee0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6c81dd64-a164-4b47-84c6-03e62beb4ee0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/WoB_Server_Basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/WoB_Server_Basic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/conf/db.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/db.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/conf/gameServer.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/gameServer.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/activation.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/activation.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/axis.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/axis.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/commons-dbcp-1.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/commons-dbcp-1.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/commons-discovery-0.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/commons-discovery-0.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/commons-logging-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/commons-pool-1.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/commons-pool-1.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/gson-2.2.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gson-2.2.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/javax.wsdl_1.6.2.v201012040545.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/javax.wsdl_1.6.2.v201012040545.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/jaxrpc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jaxrpc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/json_simple-1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/json_simple-1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/mail.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mail.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/mysql-connector-java-5.1.22-bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.22-bin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/lib/saaj.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/saaj.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/configuration/DBConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/configuration/DBConf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/configuration/GameServerConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/configuration/GameServerConf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/core/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/GameClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/core/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/core/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/NetworkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/dataAccessLayer/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataAccessLayer/ConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/dataAccessLayer/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataAccessLayer/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/dataAccessLayer/GameDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataAccessLayer/GameDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/log/WoB_Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/log/WoB_Data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/metadata/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metadata/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/metadata/GameRequestTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metadata/GameRequestTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Authentication/RequestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Authentication/RequestRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Authentication/RequestRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/GameRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/GameRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestCreateLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestCreateLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestGetLobbies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestGetLobbies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestJoinGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestJoinGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestJoinLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestJoinLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/Lobby/RequestStartGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestStartGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/RequestHeartbeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/RequestHeartbeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/request/RequestPushUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/RequestPushUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Authentication/ResponseLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Authentication/ResponseRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Authentication/ResponseRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/GameResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/GameResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseCreateLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseCreateLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseGetLobbies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseGetLobbies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseJoinGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseJoinGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseJoinLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseJoinLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/Lobby/ResponseStartGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/Lobby/ResponseStartGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/networking/response/ResponseHeartbeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/response/ResponseHeartbeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/BiomassNodeProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/BiomassNodeProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Critters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Critters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/EnergyFlowLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/EnergyFlowLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/LinkParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/LinkParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Links.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Links.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Manipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Manipulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationBiomassNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationBiomassNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationTimesteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ManipulationTimesteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ModelNodeProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/ModelNodeProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewColorItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewColorItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewColors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewCtrlSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewCtrlSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewGLViewInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewGLViewInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewPositions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewPositions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewSizeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Network3DViewSizeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NetworkACL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NetworkACL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NetworkParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NetworkParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Networks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Networks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NodeParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/NodeParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Nodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Nodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/TextureImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/TextureImages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Timeseries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Timeseries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Timesteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/Timesteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/UserLoginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/UserLoginInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/UserVote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/LINQ2Entities/UserVote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingNodeProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingNodeProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulatingParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulationParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ManipulationParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ModelParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/ModelParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/NetworkModelTypeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/NetworkModelTypeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/NodeBiomass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/NodeBiomass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/TimestepEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/TimestepEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/WebProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/ManipulationParameter/WebProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data/EntityKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data/EntityKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data/EntityKeyMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data/EntityKeyMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfCrittershovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfCrittershovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfEnergyFlowLinkhovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfEnergyFlowLinkhovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfLinkshovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfLinkshovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationBiomassNodehovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationBiomassNodehovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationModelhovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationModelhovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationRequesthovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationRequesthovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationhovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfManipulationhovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewColorshovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewColorshovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewCtrlSettinghovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewCtrlSettinghovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewGLViewInfohovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewGLViewInfohovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewPositionshovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewPositionshovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewSizeInfohovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetwork3DViewSizeInfohovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetworkshovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNetworkshovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNodeshovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfNodeshovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfTimeserieshovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfTimeserieshovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfUserhovVakal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/EntityReferenceOfUserhovVakal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/RelatedEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/RelatedEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/StructuralObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/System_Data_Objects_DataClasses/StructuralObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CreateFoodwebRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CreateFoodwebRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CreateFoodwebResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CreateFoodwebResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CritterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CritterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CritterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/CritterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LinkResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationInfoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationLinkTimestepInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationLinkTimestepInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterInfoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationParameterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/ManipulationTimestepInfoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Network3DViewCtrlSettingResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationConceptResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkInfoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkMatrixRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkMatrixRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkMatrixResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkMatrixResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkModelTypeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkModelTypeRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkModelTypeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkModelTypeResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameListRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameListRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameListResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkNameListResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkOnlyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkOnlyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkRemoveRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkRemoveRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkSaveRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkSaveRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NetworkUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeInfoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/NodeResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/SimpleManipulationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/SimpleManipulationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TableLoaderInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TableLoaderInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TextureImagesRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TextureImagesRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TextureImagesResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TextureImagesResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeStepsSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeStepsSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesRemoveRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesRemoveRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesSaveRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesSaveRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimeseriesUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsSaveRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/TimestepsSaveRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebAnalysisResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebAnalysisResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebPropertyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebPropertyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebPropertyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/datacontract/schemas/_2004/_07/WCFService_Portal/WebPropertyResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteManipulationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteManipulationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteManipulationRequestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteManipulationRequestResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteNetworkCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteNetworkCreationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteNetworkCreationRequestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteNetworkCreationRequestResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/ExecuteRequestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/ExecuteRequestResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/IN3DService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/IN3DService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/foodwebs/www/_2009/_11/IN3DServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/foodwebs/www/_2009/_11/IN3DServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/tempuri/BasicHttpBinding_IN3DServiceStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/tempuri/BasicHttpBinding_IN3DServiceStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/tempuri/N3DWebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/tempuri/N3DWebService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/org/tempuri/N3DWebServiceLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/tempuri/N3DWebServiceLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/sql/wob_basic_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/wob_basic_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/ConfFileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/ConfFileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/GamePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/GamePacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/GamePacketStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/GamePacketStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WoB_Server_Basic/src/utility/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Log.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="773" />
+    <option name="y" value="292" />
+    <option name="width" value="1022" />
+    <option name="height" value="859" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556490783760" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\School\CSC 631\FloodedGrounds\FloodedGroundsServer\src" />
+      <recent name="Z:\School\CSC 631\FloodedGrounds\FloodedGroundsServer" />
+      <recent name="Z:\School\CSC 631\FloodedGrounds\FloodedGroundsServer\conf" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8d66fda-4466-4acd-820d-a5e18f096ef7" name="Default Changelist" comment="" />
+      <created>1556490453146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556490453146</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FloodedGroundsServer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
