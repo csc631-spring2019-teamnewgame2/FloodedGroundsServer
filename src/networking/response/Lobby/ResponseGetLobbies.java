@@ -23,7 +23,6 @@ public class ResponseGetLobbies extends GameResponse {
         GamePacket packet = new GamePacket(responseCode);
         packet.addShort16(status);
 
-
         if(status == 0) {
             Lobby lobby = null;
             packet.addInt32(size);
