@@ -32,6 +32,8 @@ public class Constants {
     public final static short SMSG_STARTGAME = 224;
     public final static short CMSG_JOINGAME = 125;
     public final static short SMSG_JOINGAME = 225;
+    public final static short CMSG_ENDGAME = 126;
+    public final static short SMSG_ENDGAME = 226;
 
     // Other
     public static final String CLIENT_VERSION = "1.00";
