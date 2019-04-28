@@ -7,6 +7,7 @@ package database.Models;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+
 import core.GameClient;
 
 /**
@@ -24,7 +25,7 @@ public class User {
     private int won;
     private int lost;
 
-    private GameClient client;
+    private String character;
 
     public User() {
     }
@@ -85,47 +86,47 @@ public class User {
         return this.lost;
     }
 
-    public GameClient getClient(){
-        return this.client;
+    public void setID(long ID) {
+        this.ID = ID;
     }
 
-    public long setID(long ID) {
-        return this.ID = ID;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String setUserName(String userName) {
-        return this.userName = userName;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String setEmail(String email) {
-        return this.email = email;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String setPassword(String password) {
-        return this.password = password;
+    public void setJoined(Timestamp joined) {
+        this.joined = joined;
     }
 
-    public Timestamp setJoined(Timestamp joined) {
-        return this.joined = joined;
+    public void setLastOnline(Timestamp lastOnline) {
+        this.lastOnline = lastOnline;
     }
 
-    public Timestamp setLastOnline(Timestamp lastOnline) {
-        return this.lastOnline = lastOnline;
+    public void setPlayed(int played) {
+        this.played = played;
     }
 
-    public int setPlayed(int played) {
-        return this.played = played;
+    public void setWon(int won) {
+        this.won = won;
     }
 
-    public int setWon(int won) {
-        return this.won = won;
+    public void setLost(int lost) {
+        this.lost = lost;
     }
 
-    public int setLost(int lost) {
-        return this.lost = lost;
+    public String getCharacter() {
+        return this.character;
     }
 
-    public GameClient setClient(GameClient client){
-        return this.client = client;
+    public void setCharacter(String character) {
+        this.character = character;
     }
 }

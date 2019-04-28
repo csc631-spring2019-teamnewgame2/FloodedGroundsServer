@@ -1,7 +1,8 @@
 package core;
 
 // Other Imports
-import database.Models.Player;
+
+import database.Models.User;
 import networking.response.GameResponse;
 import utility.Log;
 
@@ -13,16 +14,16 @@ public class NetworkManager {
     /**
      * Push a pending response to a user's queue.
      *
-     * @param player_id holds the player ID
+     * @param userID holds the player ID
      * @param response is the instance containing the response information
      */
-    public static void addResponseForUser(int player_id, GameResponse response) {
-        GameClient client = GameServer.getInstance().getThreadByPlayerID(player_id);
+    public static void addResponseForUser(long userID, GameResponse response) {
+        GameClient client = GameServer.getInstance().getThreadByUserID(userID);
 
         if (client != null) {
             client.addResponseForUpdate(response);
         } else {
-            Log.printf_e("Failed to create response for user, %d.", player_id);
+            Log.printf_e("Failed to create response for user, %d.", userID);
         }
     }
 
@@ -34,9 +35,9 @@ public class NetworkManager {
      */
     public static void addResponseForAllOnlinePlayers(int player_id, GameResponse response) {
         for (GameClient client : GameServer.getInstance().getActiveThreads().values()) {
-            Player player = client.getPlayer();
+            User user = client.getUser();
 
-            if (player != null && client.getPlayer().getID() != player_id) {
+            if (user != null && client.getUser().getID() != player_id) {
                 client.addResponseForUpdate(response);
             }
         }

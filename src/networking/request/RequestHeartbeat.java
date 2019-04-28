@@ -21,7 +21,7 @@ public class RequestHeartbeat extends GameRequest {
     public void doBusiness() throws Exception {
         Log.println("Heartbeat Requested");
 
-        responseHeartbeat.setMyPlayer(this.client.getPlayer());
+        responseHeartbeat.setUser(this.client.getUser());
         client.send(responseHeartbeat);
     }
 }

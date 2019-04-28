@@ -1,8 +1,9 @@
 package networking.response.Authentication;
 
 // Other Imports
+
+import database.Models.User;
 import metadata.Constants;
-import database.Models.Player;
 import networking.response.GameResponse;
 import utility.GamePacket;
 
@@ -13,7 +14,7 @@ import utility.GamePacket;
 public class ResponseLogin extends GameResponse {
 
     private short status;
-    private Player player;
+    private User user;
 
     public ResponseLogin() {
         responseCode = Constants.SMSG_LOGIN;
@@ -24,8 +25,12 @@ public class ResponseLogin extends GameResponse {
         GamePacket packet = new GamePacket(responseCode);
         packet.addShort16(status);
         if (status == 0) {
-            packet.addInt32(player.getID());
-            packet.addString(player.getUsername());
+            packet.addLong(user.getID());
+            packet.addString(user.getUserName());
+            packet.addString(user.getEmail());
+            packet.addInt32(user.getPlayed());
+            packet.addInt32(user.getWon());
+            packet.addInt32(user.getLost());
         }
         return packet.getBytes();
     }
@@ -34,7 +39,7 @@ public class ResponseLogin extends GameResponse {
         this.status = status;
     }
 
-    public void setPlayer(Player player) {
-        this.player = player;
+    public void setUser(User user) {
+        this.user = user;
     }
 }

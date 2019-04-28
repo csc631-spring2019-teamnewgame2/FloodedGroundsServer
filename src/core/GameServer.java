@@ -1,25 +1,23 @@
 package core;
 
 // Java Imports
+
+import configuration.GameServerConf;
+import database.DCM;
+import database.Models.User;
+import metadata.Constants;
+import metadata.GameRequestTable;
+import utility.ConfFileParser;
+import utility.Log;
+
 import java.io.IOException;
-import java.net.Socket;
 import java.net.ServerSocket;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.net.Socket;
+import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 // Other Imports
-import configuration.GameServerConf;
-import database.DCM;
-import metadata.Constants;
-import metadata.GameRequestTable;
-import database.Models.Player;
-import utility.ConfFileParser;
-import utility.Log;
 
 /**
  * The GameServer class serves as the main module that runs the server.
@@ -30,15 +28,20 @@ import utility.Log;
 public class GameServer {
 
     // Singleton Instance
+    private static ArrayList<User> users;
     private static GameServer gameServer;
+    private static ArrayList<Integer> freePorts;
+
     // Server Variables
     private boolean isDone; // Server Loop Flag
     private GameServerConf configuration; // Stores server config. variables
     private ServerSocket serverSocket;
     private ExecutorService clientThreadPool;
+
     // Reference Tables
-    private Map<String, GameClient> activeThreads = new HashMap<String, GameClient>(); // Session ID -> Client
-    private Map<Integer, Player> activePlayers = new HashMap<Integer, Player>(); // Player ID -> Player
+    private Map<String, GameClient> activeThreads = new HashMap<>(); // Session ID -> Client
+    private Map<Long, User> activePlayers = new HashMap<>(); // Player ID -> Player
+    private Map<Long, GameLobby> lobbies = new HashMap<>(); // Lobby ID -> GameLobby
 
     /**
      * Create the GameServer by setting up the request types and creating a
@@ -54,17 +57,11 @@ public class GameServer {
             Log.println_e("Database Connection Failed!");
             System.exit(-1);
         }
-        // Preload world-related objects
-        //initialize();
-        // Thread Pool for Clients
+        freePorts = new ArrayList<>();
+        for(int i = 9000; i < 9010; i++)
+            freePorts.add(i);
+        users = new ArrayList<>();
         clientThreadPool = Executors.newCachedThreadPool();
-    }
-
-    public static GameServer getInstance() {
-        if (gameServer == null) {
-            gameServer = new GameServer();
-        }
-        return gameServer;
     }
 
     /**
@@ -92,6 +89,8 @@ public class GameServer {
                 try {
                     // Accept the incoming connection from client
                     Socket clientSocket = serverSocket.accept();
+
+
                     Log.printf("%s is connecting...", clientSocket.getInetAddress().getHostAddress());
                     // Create a runnable instance to represent a client that holds the client socket
                     String session_id = createUniqueID();
@@ -113,52 +112,137 @@ public class GameServer {
         return UUID.randomUUID().toString();
     }
 
+    /**
+     * Return the gameserver object, or create one if it doesn't exist
+     *
+     * @return
+     */
+    public static GameServer getInstance() {
+        if (gameServer == null) {
+            gameServer = new GameServer();
+        }
+        return gameServer;
+    }
+
+    /**
+     * get a port from the list of free ports, removing that port from the list
+     *
+     * @return
+     */
+    public int getFreePort(){
+        int port = -1;
+        if(freePorts.size() > 0) {
+            port = freePorts.get(freePorts.size() - 1);
+        }
+        return port;
+    }
+
+    /**
+     * return a port to the list of free ports
+     *
+     * @param port
+     */
+    public void freePort(int port){
+        freePorts.add(port);
+    }
+
+    /**
+     * return the map of active threads
+     *
+     * @return
+     */
     public Map<String, GameClient> getActiveThreads() {
         return activeThreads;
     }
 
     /**
+     * Get the socket the server is running on
+     * @return
+     */
+    public ServerSocket getServerSocket(){ return this.serverSocket;}
+
+    /**
+     * Get the GameLobby bound to the Lobby ID provided, or null if the GameLobby doesn't exist
+     *
+     * @param ID ID of the Lobby to join
+     * @return The GameLobby bound to the ID, or null, if it doesn't exist
+     */
+    public GameLobby getGameLobbyByID(long ID){
+        return lobbies.get(ID);
+    }
+
+
+    /**
      * Get the GameClient thread for the player using the player ID.
      *
-     * @param playerID holds the player ID
+     * @param userID holds the user ID
      * @return the GameClient thread
      */
-    public GameClient getThreadByPlayerID(int playerID) {
+    public GameClient getThreadByUserID(long userID) {
         for (GameClient client : activeThreads.values()) {
-            Player player = client.getPlayer();
+            User user = client.getUser();
 
-            if (player != null && player.getID() == playerID) {
+            if (user != null && user.getID() == userID) {
                 return client;
             }
         }
-
         return null;
     }
 
+
+    /**
+     * get the list of users currently online
+     * @return
+     */
+    public static ArrayList<User> getUsers() {
+        return users;
+    }
+
+    /**
+     * add a user to the list of currently online users
+     * @param user
+     */
+    public static void addUser(User user){
+        users.add(user);
+    }
+
+    /**
+     * remove a user from the list of currently online users
+     * @param user
+     */
+    public static void removeUser(User user){
+        users.remove(user);
+    }
+
+    /**
+     * add a thread to the map of active threads
+     * @param client
+     */
     public void addToActiveThreads(GameClient client) {
         activeThreads.put(client.getID(), client);
     }
 
-    public List<Player> getActivePlayers() {
-        return new ArrayList<Player>(activePlayers.values());
+    public List<User> getActivePlayers() {
+        return new ArrayList<>(activePlayers.values());
     }
 
-    public Player getActivePlayer(int player_id) {
-        return activePlayers.get(player_id);
+    public User getActivePlayer(long userID) {
+        return activePlayers.get(userID);
     }
 
-    public void setActivePlayer(Player player) {
-        activePlayers.put(player.getID(), player);
+    public void setActivePlayer(User user) {
+        activePlayers.put(user.getID(), user);
     }
-    
-    public void removeActivePlayer(int player_id) {
-        activePlayers.remove(player_id);
+
+    public void removeActivePlayer(long userID) {
+        activePlayers.remove(userID);
     }
 
     /**
      * Delete a player's GameClient thread out of the activeThreads
      *
-     * @param session_id              The id of the thread.
+     *
+     * @param session_id The id of the thread.
      */
     public void deletePlayerThreadOutOfActiveThreads(String session_id) {
         activeThreads.remove(session_id);
