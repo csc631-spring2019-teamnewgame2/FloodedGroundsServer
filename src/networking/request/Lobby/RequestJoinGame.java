@@ -21,9 +21,9 @@ public class RequestJoinGame extends GameRequest {
     @Override
     public void doBusiness() throws Exception {
         if(!client.inGame()) {
-            Log.printf("User '%s' joined the game.", client.getPlayer().getUsername());
+            Log.printf("User '%s' joined the game.", client.getUser().getUserName());
 
-            responseJoinGame.setCharacter(client.getPlayer().getCharacter());
+            responseJoinGame.setCharacter(client.getUser().getCharacter());
 
             client.setInGame(true);
 

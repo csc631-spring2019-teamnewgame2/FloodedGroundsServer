@@ -20,6 +20,6 @@ public class RequestStartGame extends GameRequest {
 
     @Override
     public void doBusiness() throws Exception {
-        Log.printf("User '%s' started the game.", client.getPlayer().getUsername());
+        Log.printf("User '%s' started the game.", client.getUser().getUserName());
     }
 }
