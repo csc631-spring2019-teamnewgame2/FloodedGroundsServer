@@ -20,6 +20,6 @@ public class RequestGetLobbies extends GameRequest {
 
     @Override
     public void doBusiness() throws Exception {
-        Log.println("Get Lobbies Requested");
+        Log.printf("User '%s' requested lobbies.", client.getPlayer().getUsername());
     }
 }

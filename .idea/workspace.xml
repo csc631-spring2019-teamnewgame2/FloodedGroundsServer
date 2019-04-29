@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="4df59fed-18e9-44a0-adf2-2320067ede9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/.idea/FloodedGroundsServer.iml" beforeDir="false" />
@@ -100,7 +97,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -113,7 +110,8 @@
             </path>
             <path>
               <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,11 +260,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4df59fed-18e9-44a0-adf2-2320067ede9b" name="Default Changelist" comment="" />
-      <created>1553673278065</created>
+      <changelist id="f67795c4-98e5-450a-9694-a39b632ca050" name="Default Changelist" comment="" />
+      <created>1556494046043</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1553673278065</updated>
+      <updated>1556494046043</updated>
     </task>
     <servers />
   </component>

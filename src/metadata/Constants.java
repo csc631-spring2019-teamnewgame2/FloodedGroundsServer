@@ -35,7 +35,7 @@ public class Constants {
 
     // Other
     public static final String CLIENT_VERSION = "1.00";
-    public static final int TIMEOUT_SECONDS = 5;
+    public static final int TIMEOUT_SECONDS = 10;
 
     //Characters
     public final static HashMap<String, Integer> characters;

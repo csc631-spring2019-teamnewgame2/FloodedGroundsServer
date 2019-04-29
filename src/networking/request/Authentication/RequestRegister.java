@@ -20,6 +20,6 @@ public class RequestRegister extends GameRequest {
 
     @Override
     public void doBusiness() throws Exception {
-        Log.println("Create Lobby Requested");
+        Log.printf("User '%s' registered.", client.getPlayer().getUsername());
     }
 }

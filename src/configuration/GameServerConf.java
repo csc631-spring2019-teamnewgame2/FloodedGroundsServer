@@ -13,7 +13,7 @@ public class GameServerConf {
     private Map<String, String> confRecords; // Stores server config. variables
 
     public GameServerConf() {
-        confRecords = new HashMap<String, String>();
+        confRecords = new HashMap<>();
     }
 
     public void setConfRecords(Map<String, String> confRecords) {
