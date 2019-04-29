@@ -42,6 +42,21 @@ public class DataReader {
     }
 
     /**
+     * Read a single long from the input stream. Used for Python client
+     * PyDatagram decoding.
+     *
+     * @param in references the input stream
+     * @return the value read from the input stream
+     * @throws IOException
+     */
+    public static long readLong(DataInputStream in) throws IOException {
+        if (in.available() > 0) {
+            return Long.reverseBytes(in.readLong());
+        }
+        return -1;
+    }
+
+    /**
      * Read a single boolean from the input stream. Used for Python client
      * PyDatagram decoding.
      * 
