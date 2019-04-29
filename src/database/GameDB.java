@@ -1,4 +1,4 @@
-package dataAccessLayer;
+package database;
 
 // Java Imports
 import javax.sql.DataSource;
