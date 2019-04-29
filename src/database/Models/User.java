@@ -8,6 +8,8 @@ package database.Models;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
+import core.GameClient;
+
 /**
  * @author Travis
  */
@@ -22,6 +24,8 @@ public class User {
     private int played;
     private int won;
     private int lost;
+
+    private String character;
 
     public User() {
     }
@@ -82,39 +86,47 @@ public class User {
         return this.lost;
     }
 
-    public long setID(long ID) {
-        return this.ID = ID;
+    public void setID(long ID) {
+        this.ID = ID;
     }
 
-    public String setUserName(String userName) {
-        return this.userName = userName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String setEmail(String email) {
-        return this.email = email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String setPassword(String password) {
-        return this.password = password;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public Timestamp setJoined(Timestamp joined) {
-        return this.joined = joined;
+    public void setJoined(Timestamp joined) {
+        this.joined = joined;
     }
 
-    public Timestamp setLastOnline(Timestamp lastOnline) {
-        return this.lastOnline = lastOnline;
+    public void setLastOnline(Timestamp lastOnline) {
+        this.lastOnline = lastOnline;
     }
 
-    public int setPlayed(int played) {
-        return this.played = played;
+    public void setPlayed(int played) {
+        this.played = played;
     }
 
-    public int setWon(int won) {
-        return this.won = won;
+    public void setWon(int won) {
+        this.won = won;
     }
 
-    public int setLost(int lost) {
-        return this.lost = lost;
+    public void setLost(int lost) {
+        this.lost = lost;
+    }
+
+    public String getCharacter() {
+        return this.character;
+    }
+
+    public void setCharacter(String character) {
+        this.character = character;
     }
 }

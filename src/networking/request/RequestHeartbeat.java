@@ -19,7 +19,7 @@ public class RequestHeartbeat extends GameRequest {
 
     @Override
     public void doBusiness() throws Exception {
-        responseHeartbeat.setMyPlayer(this.client.getPlayer());
+        responseHeartbeat.setUser(this.client.getUser());
         client.send(responseHeartbeat);
     }
 }

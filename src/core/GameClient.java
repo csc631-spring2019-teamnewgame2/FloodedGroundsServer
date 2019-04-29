@@ -12,9 +12,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 // Other Imports
+import database.Models.User;
 import metadata.Constants;
 import metadata.GameRequestTable;
-import database.Models.Player;
 import networking.request.GameRequest;
 import networking.response.GameResponse;
 import utility.DataReader;
@@ -42,8 +42,7 @@ public class GameClient implements Runnable {
     private byte[] latestUpdateFromClient; // Stores the last update pushed from the client
 
     // Other Variables
-    private Player player;
-    private int newTestVar = 1000;
+    private User user;
 
     /**
      * Initialize the GameClient using the client socket and creating both input
@@ -128,8 +127,8 @@ public class GameClient implements Runnable {
             }
         }
 
-        if (player != null) {
-            removePlayerData();
+        if (user != null) {
+            removeUserData();
         }
 
         // Remove this GameClient from the server
@@ -142,10 +141,10 @@ public class GameClient implements Runnable {
      * stored for the player will be saved into the database and any ties with
      * the server will be removed as well.
      */
-    public void removePlayerData() {
-        Player.removePlayer(player);
-        GameServer.getInstance().removeActivePlayer(player.getID());
-        Log.printf("User '%s' has logged off.", player.getUsername());
+    public void removeUserData() {
+        // Player.removePlayer(player);
+        GameServer.getInstance().removeActivePlayer(user.getID());
+        Log.printf("User '%s' has logged off.", user.getUserName());
     }
 
     public String getID() {
@@ -156,17 +155,15 @@ public class GameClient implements Runnable {
         isDone = true;
     }
 
-    public int getUserID() {
-        return player != null ? player.getID() : -1;
+    public long getUserID() {
+        return user != null ? user.getID() : -1;
     }
 
-    public Player getPlayer() {
-        return player;
+    public User getUser() {
+        return user;
     }
 
-    public Player setPlayer(Player player) {
-        return this.player = player;
-    }
+    public void setUser(User user){ this.user = user;}
 
     public boolean addResponseForUpdate(GameResponse response) {
         return updatesForClient.add(response);
@@ -220,6 +217,8 @@ public class GameClient implements Runnable {
         return outputStream;
     }
 
+    public Socket getClientSocket(){return this.clientSocket; }
+
     /**
      * Remove all responses for this client.
      */
@@ -235,15 +234,7 @@ public class GameClient implements Runnable {
         session_id = GameServer.createUniqueID();
         updatesForClient.clear();
 
-        player = null;
-    }
-
-    public int getNewTestVar() {
-        return newTestVar;
-    }
-
-    public void setNewTestVar(int newTestVar) {
-        this.newTestVar = newTestVar;
+        user = null;
     }
 
     @Override

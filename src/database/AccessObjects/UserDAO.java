@@ -7,12 +7,32 @@ package database.AccessObjects;
 
 import database.Models.User;
 
-import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author Travis
  */
 public interface UserDAO {
+
+    /**
+     *
+     * @return List containing all users
+     */
+    public List<User> getAllUsers();
+
+    /**
+     * @param ID User ID to look up name for
+     * @return name of User
+     */
+    public String getUserNameByID(long ID);
+
+    /**
+     *
+     * @return A map with all usernames associated with ID
+     */
+    public Map<Long,String> getAllUsernames();
+
     /**
      * @param ID
      * @return
@@ -50,4 +70,18 @@ public interface UserDAO {
      * @return
      */
     public boolean updateUserPassword(User user, String oldPassword, String newPassword);
+
+    /**
+     * Verify that the given UserName is not being used by an existing account
+     * @param username
+     * @return
+     */
+    public boolean verifyUniqueUsername(String username);
+
+    /**
+     * Verify that the given email is not being used by an existing account
+     * @param email
+     * @return
+     */
+    public boolean verifyUniqueEmail(String email);
 }

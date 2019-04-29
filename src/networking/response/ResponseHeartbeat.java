@@ -1,20 +1,21 @@
 package networking.response;
 
+import core.GameServer;
+import database.Models.User;
 import metadata.Constants;
-import database.Models.Player;
 import utility.GamePacket;
 import java.util.Vector;
 
 public class ResponseHeartbeat extends GameResponse {
 
-    private Player myPlayer;
+    private User user;
 
     public ResponseHeartbeat() {
         responseCode = Constants.SMSG_HEARTBEAT;
     }
 
-    public void setMyPlayer(Player myPlayer) {
-        this.myPlayer = myPlayer;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
@@ -22,22 +23,22 @@ public class ResponseHeartbeat extends GameResponse {
         GamePacket packet = new GamePacket(responseCode);
 
         //A list of players that have an update
-        Vector<Player> playersWithUpdates = new Vector<>();
+        Vector<User> usersWithUpdates = new Vector<>();
 
-        for(Player player : Player.getPlayers()) {
-            if(player != myPlayer && player.getClient().getLatestUpdateFromClient() != null)
-                playersWithUpdates.add(player);
+        for(User user : GameServer.getInstance().getUsers()) {
+            if(user != this.user && GameServer.getInstance().getThreadByUserID(user.getID()).getLatestUpdateFromClient() != null)
+                usersWithUpdates.add(user);
         }
 
         //Send the number of serverUpdates
-        packet.addShort16((short)playersWithUpdates.size());
+        packet.addShort16((short)usersWithUpdates.size());
 
         //Loop through all of the players with serverUpdates
-        for(Player player : playersWithUpdates) {
+        for(User user : usersWithUpdates) {
                 //Add the character code
-                packet.addShort16(Constants.characters.get(player.getCharacter()).shortValue());
+                packet.addShort16(Constants.characters.get(user.getCharacter()).shortValue());
                 //Add the player's update
-                packet.addBytes(player.getClient().getLatestUpdateFromClient());
+                packet.addBytes(GameServer.getInstance().getThreadByUserID(user.getID()).getLatestUpdateFromClient());
             }
 
         return packet.getBytes();

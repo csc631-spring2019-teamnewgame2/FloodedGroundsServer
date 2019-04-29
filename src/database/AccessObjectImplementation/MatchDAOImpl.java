@@ -20,6 +20,13 @@ import java.util.List;
  * @author Travis
  */
 public class MatchDAOImpl implements MatchDAO {
+    private static MatchDAO matchDAO;
+    public static MatchDAO getDao(){
+        if(matchDAO == null)
+            matchDAO = new MatchDAOImpl();
+        return matchDAO;
+    }
+
     @Override
     public Match getMatchByID(long ID) {
         String query = "SELECT * FROM match WHERE ID = ?";
