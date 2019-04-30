@@ -27,6 +27,20 @@ import java.util.concurrent.Executors;
  */
 public class GameServer {
 
+    // todo: remove this when lobbies are implemented -- it's to bypass GameLobby
+    private ArrayList<String> availableCharacters;
+    public String getCharacter(){
+        // assign a random character to the player when adding to lobby
+        int randomIndex = new Random().nextInt(availableCharacters.size());
+        String character = availableCharacters.get(randomIndex);
+        return character;
+    }
+
+    public void disableCharacter(String character){
+        availableCharacters.remove(character);
+    }
+
+
     // Singleton Instance
     private static ArrayList<User> users;
     private static GameServer gameServer;
@@ -62,6 +76,10 @@ public class GameServer {
             freePorts.add(i);
         users = new ArrayList<>();
         clientThreadPool = Executors.newCachedThreadPool();
+
+        // todo: this is part of the bandaid fix
+        availableCharacters = new ArrayList<>(Constants.characters.keySet());
+
     }
 
     /**
@@ -235,6 +253,8 @@ public class GameServer {
     }
 
     public void removeActivePlayer(long userID) {
+        String character = getActivePlayer(userID).getCharacter();
+        if(character != null) availableCharacters.add(character);
         activePlayers.remove(userID);
     }
 

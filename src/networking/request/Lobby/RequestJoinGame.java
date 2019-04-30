@@ -2,6 +2,7 @@ package networking.request.Lobby;
 
 import java.io.IOException;
 
+import core.GameServer;
 import networking.request.GameRequest;
 import networking.response.Lobby.ResponseJoinGame;
 import utility.DataReader;
@@ -26,7 +27,15 @@ public class RequestJoinGame extends GameRequest {
         if(!client.inGame()) {
             Log.printf("User '%s' joined the game.", client.getUser().getUserName());
 
-            responseJoinGame.setCharacter(client.getUser().getCharacter());
+
+            // todo: remove this, it's a fix to bypass GameLobby
+            String character = GameServer.getInstance().getCharacter();
+            GameServer.getInstance().disableCharacter(character);
+            client.getUser().setCharacter(character);
+            responseJoinGame.setCharacter(character);
+
+            // todo: uncomment when Lobbies are implemented
+            //responseJoinGame.setCharacter(client.getUser().getCharacter());
 
             client.setInGame(true);
 

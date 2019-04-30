@@ -25,7 +25,7 @@ public class ResponseHeartbeat extends GameResponse {
         //A list of players that have an update
         Vector<User> usersWithUpdates = new Vector<>();
 
-        for(User user : GameServer.getInstance().getUsers()) {
+        for(User user : GameServer.getInstance().getActivePlayers()) {
             if(user != this.user && GameServer.getInstance().getThreadByUserID(user.getID()).getLatestUpdateFromClient() != null)
                 usersWithUpdates.add(user);
         }
