@@ -2,14 +2,139 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="FloodedGroundsServer:jar" />
+      <artifact name="FloodedGroundsServer:jar2" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df59fed-18e9-44a0-adf2-2320067ede9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/AccessObjects/LobbyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/networking/request/Lobby/RequestJoinLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Lobby/RequestJoinLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/artifacts/FloodedGroundsServer_jar/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/artifacts/FloodedGroundsServer_jar/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/artifacts/FloodedGroundsServer_jar/conf/db.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/artifacts/FloodedGroundsServer_jar/conf/gameServer.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/core/GameClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/core/GameClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/core/GameServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/core/GameServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/core/NetworkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/core/NetworkManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/metadata/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/metadata/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Authentication/RequestLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Authentication/RequestLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Authentication/RequestRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Authentication/RequestRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestCreateLobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestCreateLobby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestGetLobbies.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestGetLobbies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestJoinGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestJoinGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestJoinLobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestJoinLobby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestStartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/Lobby/RequestStartGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/RequestHeartbeat.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/request/RequestHeartbeat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Authentication/ResponseLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Authentication/ResponseLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Authentication/ResponseRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Authentication/ResponseRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Lobby/ResponseCreateLobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Lobby/ResponseCreateLobby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Lobby/ResponseGetLobbies.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Lobby/ResponseGetLobbies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Lobby/ResponseJoinLobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/Lobby/ResponseJoinLobby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/ResponseHeartbeat.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/networking/response/ResponseHeartbeat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/utility/ConfFileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/utility/ConfFileParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/utility/DataReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/utility/DataReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/utility/GamePacketStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/builds/production/FloodedGroundsServer/utility/GamePacketStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/.idea/FloodedGroundsServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/META-INF/FloodedGroundsServer.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/.idea/FloodedGroundsServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/activation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/axis.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/commons-discovery-0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/commons-pool-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/gson-2.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/javax.wsdl_1.6.2.v201012040545.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/jaxrpc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/json_simple-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/mysql-connector-java-5.1.22-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/lib/saaj.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/log/WoB_Data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/builds/production/FloodedGroundsServer/src/log/WoB_Data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/conf/db.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/configuration/DBConf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/configuration/GameServerConf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/core/GameClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/core/GameLobby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/core/GameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/core/NetworkManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/AccessObjectImplementation/LobbyDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/AccessObjectImplementation/MatchDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/AccessObjectImplementation/UserDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/AccessObjectImplementation/UserMatchDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/AccessObjects/LobbyDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/AccessObjects/MatchDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/AccessObjects/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/AccessObjects/UserMatchDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/DCM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/GameDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/Models/Lobby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/Models/Match.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/Models/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/Models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/database/Models/UserMatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/activation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/axis.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/commons-discovery-0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/commons-pool-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/gson-2.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/javax.wsdl_1.6.2.v201012040545.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/jaxrpc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/json_simple-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/mysql-connector-java-5.1.22-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/lib/saaj.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/log/WoB_Data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/metadata/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/metadata/GameRequestTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/model/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/Authentication/RequestLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/Authentication/RequestRegister.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/GameRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/Lobby/RequestCreateLobby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/Lobby/RequestEndGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/Lobby/RequestGetLobbies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/Lobby/RequestJoinGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/Lobby/RequestJoinLobby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/Lobby/RequestStartGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/RequestHeartbeat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/request/RequestPushUpdate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/Authentication/ResponseLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/Authentication/ResponseRegister.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/GameResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/Lobby/ResponseCreateLobby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/Lobby/ResponseEndGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/Lobby/ResponseGetLobbies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/Lobby/ResponseJoinGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/Lobby/ResponseJoinLobby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/Lobby/ResponseStartGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/networking/response/ResponseHeartbeat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/src/log/WoB_Data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/test/DatabaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/test/LobbyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/test/MatchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/test/UserMatchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/test/UserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/utility/ConfFileParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/utility/DataReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/utility/GamePacket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/utility/GamePacketStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FloodedGroundsServer/utility/Log.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,15 +145,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="30" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/networking/response/Lobby/ResponseEndGame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -37,11 +153,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/networking/request/Lobby/RequestJoinLobby.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="-85">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -71,7 +196,7 @@
         <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-217">
-              <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+              <caret line="142" selection-start-line="142" selection-end-line="142" />
               <folding>
                 <element signature="method#createLobby#0;class#LobbyDAOImpl#0" />
                 <element signature="method#deleteLobby#0;class#LobbyDAOImpl#0" />
@@ -181,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="633" />
     <option name="width" value="654" />
     <option name="height" value="767" />
@@ -202,104 +327,7 @@
             <path>
               <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="AccessObjectImplementation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="AccessObjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-              <item name="Lobby" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
-              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
-              <item name="Lobby" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="builds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -403,7 +431,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/conf" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.2045977" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -468,9 +496,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -479,15 +506,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.3281412" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49913794" weight="0.32914045" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.3281412" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.3281412" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49840087" visible="true" weight="0.3281412" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49840087" weight="0.3281412" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -756,13 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/networking/request/RequestHeartbeat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -880,7 +900,7 @@
     <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-217">
-          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
           <folding>
             <element signature="method#createLobby#0;class#LobbyDAOImpl#0" />
             <element signature="method#deleteLobby#0;class#LobbyDAOImpl#0" />
@@ -890,8 +910,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/networking/request/Lobby/RequestJoinLobby.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="-85">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -900,12 +927,17 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
-          <last-edited>FloodedGroundsServer:jar</last-edited>
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="library" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>FloodedGroundsServer:jar2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.2045977" />
                 <option value="0.5" />
               </list>
             </option>
