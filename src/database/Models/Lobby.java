@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class Lobby {
 
-    private long ID;
+    private int port;
     private String name;
     private int privacy;
     private boolean passwordRequired;
@@ -31,22 +31,22 @@ public class Lobby {
     }
 
     /**
-     * @param ID
+     * @param port
      * @param name
      * @param password
      * @param privacy
      * @param owner
      */
-    public Lobby(long ID, String name, int privacy,
+    public Lobby(int port, String name, int privacy,
                  boolean passwordRequired, String password,
                  long owner) {
-        this(ID, name, privacy, passwordRequired, password, owner, 0, 0, 0);
+        this(port, name, privacy, passwordRequired, password, owner, 0, 0, 0);
     }
 
-    public Lobby(long ID, String name, int privacy,
+    public Lobby(int port, String name, int privacy,
                  boolean passwordRequired, String password,
                  long owner, long player1, long player2, long player3) {
-        this.ID = ID;
+        this.port = port;
         this.name = name;
         this.password = password;
         this.privacy = privacy;
@@ -57,8 +57,8 @@ public class Lobby {
         this.playerList.add(player3);
     }
 
-    public long getID() {
-        return this.ID;
+    public int getPort() {
+        return this.port;
     }
 
     public String getName() {
@@ -108,8 +108,8 @@ public class Lobby {
         this.passwordRequired = passwordRequired;
     }
 
-    public void setID(long ID) {
-        this.ID = ID;
+    public void setPort(int port) {
+        this.port = port;
     }
 
     public void setName(String name) {

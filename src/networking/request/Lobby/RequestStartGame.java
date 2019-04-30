@@ -4,11 +4,13 @@ import java.io.IOException;
 
 import networking.request.GameRequest;
 import networking.response.Lobby.ResponseStartGame;
+import utility.DataReader;
 import utility.Log;
 
 public class RequestStartGame extends GameRequest {
 
     private ResponseStartGame responseStartGame;
+    private String version;
 
     public RequestStartGame() {
         responses.add(responseStartGame = new ResponseStartGame());
@@ -16,7 +18,9 @@ public class RequestStartGame extends GameRequest {
 
     @Override
     public void parse() throws IOException {
+        version = DataReader.readString(dataInput).trim();
     }
+
 
     @Override
     public void doBusiness() throws Exception {

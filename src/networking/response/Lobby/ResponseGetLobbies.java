@@ -28,7 +28,7 @@ public class ResponseGetLobbies extends GameResponse {
             packet.addInt32(size);
             for (int i = 0; i < lobbyList.size(); i++) {
                 lobby = lobbyList.get(i);
-                packet.addLong(lobby.getID());
+                packet.addLong(lobby.getPort());
                 packet.addString(lobby.getName());
                 packet.addString(userNames.get(lobby.getOwner()));
                 packet.addInt32(lobby.getPrivacy());

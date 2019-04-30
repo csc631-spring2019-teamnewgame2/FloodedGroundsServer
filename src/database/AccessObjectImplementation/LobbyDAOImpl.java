@@ -168,7 +168,7 @@ public class LobbyDAOImpl implements LobbyDAO {
         try {
             Connection connection = DCM.getDataSource().getConnection();
             PreparedStatement ps = connection.prepareStatement(query);
-            ps.setLong(1, lobby.getID());
+            ps.setLong(1, lobby.getPort());
             ps.setString(2, lobby.getName());
             ps.setInt(3, lobby.getPrivacy());
             ps.setBoolean(4, lobby.getPasswordRequired());
@@ -197,7 +197,7 @@ public class LobbyDAOImpl implements LobbyDAO {
             ps.setLong(2, lobby.getPlayer1());
             ps.setLong(3, lobby.getPlayer2());
             ps.setLong(4, lobby.getPlayer3());
-            ps.setLong(5, lobby.getID());
+            ps.setLong(5, lobby.getPort());
             ps.executeUpdate();
             ps.close();
             success = true;
@@ -218,7 +218,7 @@ public class LobbyDAOImpl implements LobbyDAO {
         try {
             connection = DCM.getDataSource().getConnection();
             ps = connection.prepareStatement(query);
-            ps.setLong(1, lobby.getID());
+            ps.setLong(1, lobby.getPort());
             ps.executeUpdate();
             ps.close();
             success = true;

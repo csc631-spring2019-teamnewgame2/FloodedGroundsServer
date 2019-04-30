@@ -39,12 +39,12 @@ public class RequestJoinLobby extends GameRequest {
         if (version.compareTo(Constants.CLIENT_VERSION) >= 0) {
             // try to add player to the selected lobby
             if (lobby.addPlayer(playerID)) {
-                Log.println("Player " + playerID + " joined lobby " + lobby.getID());
+                Log.println("Player " + playerID + " joined lobby " + lobby.getPort());
                 responseJoinLobby.setStatus((short) 0);
                 LobbyDAOImpl.getDao().updateLobbyPlayers(lobby);
 
                 // retrieve GameLobbv and add player to it
-                GameLobby gameLobby = GameServer.getInstance().getGameLobbyByID(lobby.getID());
+                GameLobby gameLobby = GameServer.getInstance().getGameLobbyByID(lobby.getPort());
                 gameLobby.addPlayerToLobby(GameServer.getInstance().getThreadByUserID(playerID));
                 responseJoinLobby.setPort(gameLobby.getPort());
             } else {

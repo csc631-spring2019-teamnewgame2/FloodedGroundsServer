@@ -9,7 +9,6 @@ public class ResponseCreateLobby extends GameResponse {
 
     private short status;
     private Lobby lobby;
-    private int port;
 
     public ResponseCreateLobby() {
         responseCode = Constants.SMSG_CREATELOBBY;
@@ -18,6 +17,10 @@ public class ResponseCreateLobby extends GameResponse {
     @Override
     public byte[] constructResponseInBytes() {
         GamePacket packet = new GamePacket(responseCode);
+        packet.addShort16(status);
+        if(status == 0){
+            packet.addInt32(lobby.getPort());
+        }
         return packet.getBytes();
     }
 
@@ -28,10 +31,5 @@ public class ResponseCreateLobby extends GameResponse {
     public void setLobby(Lobby lobby) {
         this.lobby = lobby;
     }
-
-    public void setPort(int port) {
-        this.port = port;
-    }
-
 
 }

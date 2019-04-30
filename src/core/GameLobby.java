@@ -24,20 +24,17 @@ public class GameLobby implements Runnable {
     private Lobby lobby;
 
     private ServerSocket serverSocket;
-    private int port;
-
     private boolean done;
 
     /**
      * @param lobby
-     * @param port
      */
-    public GameLobby(Lobby lobby, int port) {
+    public GameLobby(Lobby lobby) {
         try {
             // create a ServerSocket for the lobby
-            serverSocket = new ServerSocket(port);
-            this.port = port;
+            serverSocket = new ServerSocket(lobby.getPort());
             this.lobby = lobby;
+
         } catch (IOException e) {
             Log.println(e.getMessage());
         }
@@ -97,7 +94,7 @@ public class GameLobby implements Runnable {
             try {
                 clients.add(client);
                 client.getClientSocket().bind(new InetSocketAddress(serverSocket.getLocalPort()));
-                lobby.addPlayer((long) client.getUserID());
+                lobby.addPlayer(client.getUserID());
 
                 // assign a random character to the player when adding to lobby
                 int randomIndex = new Random().nextInt(availableCharacters.size());
@@ -126,7 +123,7 @@ public class GameLobby implements Runnable {
     }
 
     public int getPort(){
-        return this.port;
+        return this.lobby.getPort();
     }
 
 

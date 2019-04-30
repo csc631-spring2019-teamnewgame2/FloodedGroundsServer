@@ -20,7 +20,7 @@ public class RequestCreateLobby extends GameRequest {
     private String version;
 
 
-    private long ID;
+    private int port;
     private String name;
     private String password;
     private int privacy;
@@ -34,7 +34,6 @@ public class RequestCreateLobby extends GameRequest {
     @Override
     public void parse() throws IOException {
         version = DataReader.readString(dataInput).trim();
-        ID = DataReader.readLong(dataInput);
         name = DataReader.readString(dataInput).trim();
         privacy = DataReader.readInt(dataInput);
         passwordRequired = DataReader.readBoolean(dataInput);
@@ -44,15 +43,15 @@ public class RequestCreateLobby extends GameRequest {
 
     @Override
     public void doBusiness() throws Exception {
-        Lobby lobby = new Lobby(ID, name, privacy, passwordRequired, password, owner);
+        port = GameServer.getInstance().getFreePort();
+        Lobby lobby = new Lobby(port, name, privacy, passwordRequired, password, owner);
 
         if (LobbyDAOImpl.getDao().createLobby(lobby, owner)) {
             responseCreateLobby.setStatus((short) 0);
 
             GameClient client = GameServer.getInstance().getThreadByUserID(owner);
-            GameLobby gameLobby = new GameLobby(lobby, GameServer.getInstance().getFreePort());
-            responseCreateLobby.setPort(gameLobby.getPort());
-
+            GameLobby gameLobby = new GameLobby(lobby);
+            responseCreateLobby.setLobby(lobby);
             Log.println("Lobby creation successful");
         } else {
             responseCreateLobby.setStatus((short) 1);
