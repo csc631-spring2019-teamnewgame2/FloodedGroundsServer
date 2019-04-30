@@ -71,7 +71,7 @@ public class GamePacketStream extends ByteArrayOutputStream {
      */
     void add(long int_val) {
         try {
-            byte[] bytes = new byte[4];
+            byte[] bytes = new byte[8];
 
             bytes[0] = (byte) (int_val);        // Lo 0
             bytes[1] = (byte) (int_val >> 8);   // Hi 0
