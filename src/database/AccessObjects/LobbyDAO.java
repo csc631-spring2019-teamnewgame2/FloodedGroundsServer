@@ -20,7 +20,7 @@ public interface LobbyDAO {
      * @param ID
      * @return
      */
-    public Lobby getLobbyByID(long ID);
+    public Lobby getLobbyByID(int ID);
 
     /**
      *

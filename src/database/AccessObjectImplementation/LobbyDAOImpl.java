@@ -43,7 +43,7 @@ public class LobbyDAOImpl implements LobbyDAO {
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                long ID = rs.getLong("ID");
+                int ID = rs.getInt("ID");
                 String name = rs.getString("name");
                 String password = rs.getString("password");
                 boolean passwordRequired = rs.getBoolean("passwordRequired");
@@ -62,7 +62,7 @@ public class LobbyDAOImpl implements LobbyDAO {
     }
 
     @Override
-    public Lobby getLobbyByID(long ID) {
+    public Lobby getLobbyByID(int ID) {
         String query = "SELECT * FROM lobby WHERE ID = ?";
 
         Lobby lobby = null;
@@ -110,7 +110,7 @@ public class LobbyDAOImpl implements LobbyDAO {
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                long ID = rs.getLong("ID");
+                int ID = rs.getInt("ID");
                 String password = rs.getString("password");
                 boolean passwordRequired = rs.getBoolean("passwordRequired");
                 int privacy = rs.getInt("privacy");
@@ -144,7 +144,7 @@ public class LobbyDAOImpl implements LobbyDAO {
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                long ID = rs.getLong("ID");
+                int ID = rs.getInt("ID");
                 String name = rs.getString("name");
                 boolean passwordRequired = rs.getBoolean("passwordRequired");
                 String password = rs.getString("password");

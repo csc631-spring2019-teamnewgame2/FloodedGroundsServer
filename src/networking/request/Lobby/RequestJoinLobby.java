@@ -17,7 +17,7 @@ public class RequestJoinLobby extends GameRequest {
     private ResponseJoinLobby responseJoinLobby;
 
     private String version;
-    private long lobbyID;
+    private int lobbyID;
     private long playerID;
 
     public RequestJoinLobby() {
@@ -27,7 +27,7 @@ public class RequestJoinLobby extends GameRequest {
     @Override
     public void parse() throws IOException {
         version = DataReader.readString(dataInput).trim();
-        lobbyID = DataReader.readLong(dataInput);
+        lobbyID = DataReader.readInt(dataInput);
         playerID = DataReader.readLong(dataInput);
     }
 
