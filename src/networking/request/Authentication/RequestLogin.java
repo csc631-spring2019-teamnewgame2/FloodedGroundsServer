@@ -63,8 +63,9 @@ public class RequestLogin extends GameRequest {
                     // If account is already in use, remove and disconnect the client
                     if (thread != null) {
                         responseLogin.setStatus((short) 2); // Account is in use
-                        thread.removeUserData();
-                        thread.newSession();
+//                        thread.removeUserData();
+//                        thread.newSession();
+                        
                         Log.printf("User '%s' account is already in use.", user_id);
                     } else {
                         // Continue with the login process
