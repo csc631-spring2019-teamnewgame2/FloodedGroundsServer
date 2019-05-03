@@ -119,12 +119,14 @@ public class GameClient implements Runnable {
                         isDone = true;
                     }
                 }
+                Thread.sleep(5);
             } catch (Exception ex) {
                 Log.printf_e("Request [%d] Error:", requestCode);
                 Log.println_e(ex.getMessage());
                 Log.println_e("---");
                 ex.printStackTrace();
             }
+
         }
 
         if (user != null) {
