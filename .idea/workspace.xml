@@ -20,10 +20,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/networking/request/Lobby/RequestJoinGame.java">
+        <entry file="file://$PROJECT_DIR$/src/database/Models/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+            <state relative-caret-position="342">
+              <caret line="132" selection-start-line="132" selection-end-line="132" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2748#2749#0" expanded="true" />
+                <element signature="e#2790#2791#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/core/GameLobby.java" />
         <option value="$PROJECT_DIR$/src/database/Models/Lobby.java" />
         <option value="$PROJECT_DIR$/src/networking/request/Lobby/RequestStartGame.java" />
-        <option value="$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java" />
         <option value="$PROJECT_DIR$/src/networking/response/Lobby/ResponseCreateLobby.java" />
         <option value="$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/networking/request/Lobby/RequestCreateLobby.java" />
@@ -522,19 +526,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/database/AccessObjectImplementation/LobbyDAOImpl.java</url>
-          <line>178</line>
+          <line>189</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserMatchDAOImpl.java</url>
-          <line>58</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/database/AccessObjectImplementation/MatchDAOImpl.java</url>
-          <line>55</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
@@ -563,13 +567,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/sql/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/sql/Statement.java" />
     <entry file="jar://$PROJECT_DIR$/lib/commons-dbcp-1.4.jar!/org/apache/commons/dbcp/PoolableConnectionFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -717,13 +715,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java" />
     <entry file="file://$PROJECT_DIR$/src/utility/GamePacket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">

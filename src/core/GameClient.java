@@ -235,7 +235,6 @@ public class GameClient implements Runnable {
     public void newSession() {
         session_id = GameServer.createUniqueID();
         updatesForClient.clear();
-
         user = null;
     }
 
