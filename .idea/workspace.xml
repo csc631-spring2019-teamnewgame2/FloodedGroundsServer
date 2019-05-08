@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df59fed-18e9-44a0-adf2-2320067ede9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/networking/request/RequestKeepAlive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metadata/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metadata/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metadata/GameRequestTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metadata/GameRequestTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,28 +22,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/GameClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3043">
-              <caret line="218" column="48" selection-start-line="218" selection-start-column="48" selection-end-line="218" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/GameServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2584">
-              <caret line="172" column="16" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="16" />
-              <folding>
-                <element signature="e#5626#5627#0" expanded="true" />
-                <element signature="e#5662#5663#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/metadata/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -53,11 +30,63 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/metadata/GameRequestTable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/networking/request/Authentication/RequestRegister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="54" column="70" lean-forward="true" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getDao#0;class#UserDAOImpl#0" />
+                <element signature="method#getAllUsers#0;class#UserDAOImpl#0" />
+                <element signature="method#getUserNameByID#0;class#UserDAOImpl#0" />
+                <element signature="method#getAllUsernames#0;class#UserDAOImpl#0" />
+                <element signature="method#getUserByID#0;class#UserDAOImpl#0" />
+                <element signature="method#createUser#0;class#UserDAOImpl#0" />
+                <element signature="method#updateUser#0;class#UserDAOImpl#0" />
+                <element signature="method#updateUserPassword#0;class#UserDAOImpl#0" />
+                <element signature="method#verifyUniqueUsername#0;class#UserDAOImpl#0" />
+                <element signature="method#verifyUniqueEmail#0;class#UserDAOImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -140,6 +169,7 @@
       <find>responselist</find>
       <find>GameClient</find>
       <find>new GameServer</find>
+      <find>user.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,10 +225,11 @@
         <option value="$PROJECT_DIR$/src/networking/request/RequestKeepAlive.java" />
         <option value="$PROJECT_DIR$/src/metadata/Constants.java" />
         <option value="$PROJECT_DIR$/src/metadata/GameRequestTable.java" />
+        <option value="$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1920" />
     <option name="y" value="36" />
     <option name="width" value="1680" />
@@ -231,6 +262,12 @@
               <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FloodedGroundsServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FloodedGroundsServer" type="b2602c69:ProjectViewProjectNode" />
@@ -391,7 +428,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557302855263" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557304556939" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -464,7 +501,7 @@
     <option name="totallyTimeSpent" value="21838000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="9" width="1634" height="1066" extended-state="6" />
+    <frame x="1912" y="9" width="1634" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15565439" />
@@ -476,13 +513,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49511003" weight="0.33706608" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49205378" visible="true" weight="0.34154534" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4917408" visible="true" weight="0.34083602" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49572128" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49913794" weight="0.32914045" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5079462" side_tool="true" visible="true" weight="0.34083602" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50825924" side_tool="true" visible="true" weight="0.34083602" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.3281412" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4978678" weight="0.3281412" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -559,23 +596,6 @@
             <element signature="docComment;method#createUser#0;class#UserDAO#0" />
             <element signature="docComment;method#updateUser#0;class#UserDAO#0" />
             <element signature="docComment;method#updateUserPassword#0;class#UserDAO#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getUserByID#0;class#UserDAOImpl#0" />
-            <element signature="method#validateUserCredentials#0;class#UserDAOImpl#0" />
-            <element signature="method#createUser#0;class#UserDAOImpl#0" />
-            <element signature="method#updateUser#0;class#UserDAOImpl#0" />
-            <element signature="method#updateUserPassword#0;class#UserDAOImpl#0" />
-            <element signature="method#verifyUniqueUsername#0;class#UserDAOImpl#0" />
-            <element signature="method#verifyUniqueEmail#0;class#UserDAOImpl#0" />
           </folding>
         </state>
       </provider>
@@ -757,16 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/networking/request/Authentication/RequestRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="39" column="38" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/GameLobby.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -781,13 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="31" column="71" lean-forward="true" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -829,13 +832,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/io/DataInputStream.java" />
-    <entry file="file://$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="41" column="57" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/networking/response/ResponsePickup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -909,6 +905,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/networking/request/Authentication/RequestRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/networking/response/Authentication/ResponseLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/AccessObjectImplementation/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getDao#0;class#UserDAOImpl#0" />
+            <element signature="method#getAllUsers#0;class#UserDAOImpl#0" />
+            <element signature="method#getUserNameByID#0;class#UserDAOImpl#0" />
+            <element signature="method#getAllUsernames#0;class#UserDAOImpl#0" />
+            <element signature="method#getUserByID#0;class#UserDAOImpl#0" />
+            <element signature="method#createUser#0;class#UserDAOImpl#0" />
+            <element signature="method#updateUser#0;class#UserDAOImpl#0" />
+            <element signature="method#updateUserPassword#0;class#UserDAOImpl#0" />
+            <element signature="method#verifyUniqueUsername#0;class#UserDAOImpl#0" />
+            <element signature="method#verifyUniqueEmail#0;class#UserDAOImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/networking/request/Authentication/RequestLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="54" column="70" lean-forward="true" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
         </state>
       </provider>
     </entry>

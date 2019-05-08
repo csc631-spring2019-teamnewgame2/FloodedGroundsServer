@@ -81,7 +81,7 @@ public class RequestLogin extends GameRequest {
             }
         } else {
             responseLogin.setStatus((short) 3); // Client version not compatible
-            Log.printf("User '%s' has failed to log in. (v%s)", user.getUserName(), version);
+            Log.printf("User '%s' has failed to log in. (v%s)", user_id, version);
         }
     }
 }
