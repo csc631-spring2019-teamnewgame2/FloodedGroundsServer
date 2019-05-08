@@ -40,6 +40,7 @@ public class GameClient implements Runnable {
     private boolean isDone;
     private Queue<GameResponse> updatesForClient; // List of responses to send to to the client
     private byte[] latestUpdateFromClient; // Stores the last update pushed from the client
+    private int updateNumber; //How many updates have been sent to this user
 
     // Other Variables
     private User user;
@@ -61,6 +62,7 @@ public class GameClient implements Runnable {
         dataInputStream = new DataInputStream(inputStream);
         isLoggedIn = false;
         isInGame = false;
+        updateNumber = 0;
     }
 
     /**
@@ -177,6 +179,15 @@ public class GameClient implements Runnable {
 
     public byte[] getLatestUpdateFromClient() {
         return latestUpdateFromClient;
+    }
+
+    public int getUpdateNumber() {
+        if(updateNumber >= Constants.maxUpdateNumber)
+            updateNumber = 0;
+        else
+            updateNumber++;
+
+        return  updateNumber;
     }
 
     public boolean loggedIn() {

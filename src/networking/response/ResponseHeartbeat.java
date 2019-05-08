@@ -22,6 +22,9 @@ public class ResponseHeartbeat extends GameResponse {
     public byte[] constructResponseInBytes() {
         GamePacket packet = new GamePacket(responseCode);
 
+        //Add the update number
+        packet.addShort16((short)GameServer.getInstance().getThreadByUserID(user.getID()).getUpdateNumber());
+
         //A list of players that have an update
         Vector<User> usersWithUpdates = new Vector<>();
 

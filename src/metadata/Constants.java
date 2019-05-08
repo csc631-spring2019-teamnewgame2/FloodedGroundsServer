@@ -38,6 +38,7 @@ public class Constants {
     // Other
     public static final String CLIENT_VERSION = "1.00";
     public static final int TIMEOUT_SECONDS = 10;
+    public static final int maxUpdateNumber = 10000;
 
     //Characters
     public final static HashMap<String, Integer> characters;
