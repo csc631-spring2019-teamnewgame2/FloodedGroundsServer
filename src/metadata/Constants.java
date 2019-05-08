@@ -35,6 +35,11 @@ public class Constants {
     public final static short CMSG_ENDGAME = 126;
     public final static short SMSG_ENDGAME = 226;
 
+    //Actions
+    //Pickups:  x4x
+    public final static short CMSG_PICKUP = 140;
+    public final static short SMSG_PICKUP = 240;
+
     // Other
     public static final String CLIENT_VERSION = "1.00";
     public static final int TIMEOUT_SECONDS = 10;

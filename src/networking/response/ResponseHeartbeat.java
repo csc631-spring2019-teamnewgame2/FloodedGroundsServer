@@ -42,7 +42,7 @@ public class ResponseHeartbeat extends GameResponse {
                 packet.addShort16(Constants.characters.get(user.getCharacter()).shortValue());
                 //Add the player's update
                 packet.addBytes(GameServer.getInstance().getThreadByUserID(user.getID()).getLatestUpdateFromClient());
-            }
+        }
 
         return packet.getBytes();
     }
