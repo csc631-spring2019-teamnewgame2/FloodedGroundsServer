@@ -14,6 +14,7 @@ public class Constants {
     public final static short CMSG_HEARTBEAT = 101;
     public final static short SMSG_HEARTBEAT = 201;
     public final static short CMSG_PUSHUPDATE = 102;
+    public final static short CMSG_KEEPALIVE = 103;
 
     // Authentication:  x1x
     public final static short CMSG_REGISTER = 111;

@@ -23,6 +23,7 @@ public class GameRequestTable {
         // Populate the table using request codes and class names
         add(Constants.CMSG_HEARTBEAT, "RequestHeartbeat");
         add(Constants.CMSG_PUSHUPDATE, "RequestPushUpdate");
+        add(Constants.CMSG_KEEPALIVE, "RequestKeepAlive");
 
         add(Constants.CMSG_REGISTER, "RequestRegister");
         add(Constants.CMSG_LOGIN, "RequestLogin");
