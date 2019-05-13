@@ -48,10 +48,11 @@ public class RequestCreateLobby extends GameRequest {
 
         if (LobbyDAOImpl.getDao().createLobby(lobby, owner)) {
             responseCreateLobby.setStatus((short) 0);
-
-            GameClient client = GameServer.getInstance().getThreadByUserID(owner);
             GameLobby gameLobby = new GameLobby(lobby);
             responseCreateLobby.setLobby(lobby);
+
+            // create and send response with new port, then have player's port rebound
+            GameClient client = GameServer.getInstance().getThreadByUserID(owner);
             Log.println("Lobby creation successful");
         } else {
             responseCreateLobby.setStatus((short) 1);

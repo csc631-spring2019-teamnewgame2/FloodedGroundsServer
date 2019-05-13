@@ -38,6 +38,7 @@ public class GameClient implements Runnable {
     private boolean isLoggedIn;
     private boolean isInGame;
     private boolean isDone;
+    private boolean isInLobby;
     private Queue<GameResponse> updatesForClient; // List of responses to send to to the client
     private byte[] latestUpdateFromClient; // Stores the last update pushed from the client
     private int updateNumber; //How many updates have been sent to this user
@@ -62,6 +63,7 @@ public class GameClient implements Runnable {
         dataInputStream = new DataInputStream(inputStream);
         isLoggedIn = false;
         isInGame = false;
+        isInLobby = false;
         updateNumber = 0;
     }
 
@@ -118,7 +120,10 @@ public class GameClient implements Runnable {
                 } else {
                     // If there was no activity for the last moments, exit loop
                     if ((System.currentTimeMillis() - lastActivity) / 1000 >= Constants.TIMEOUT_SECONDS) {
-                        isDone = true;
+                        if(isInLobby)
+                            ; // rebind player to main menu port
+                        else
+                            isDone = true;
                     }
                 }
                 Thread.sleep(5);

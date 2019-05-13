@@ -52,11 +52,17 @@ public class GameLobby implements Runnable {
 
             // wait for players to join or owner to start game
             while(clients.size() < 4 && gameStarted == false)
-                ;
+            {
+
+
+                Thread.sleep(5);
+            }
 
             // game will be running here
             while (!done) {
                 // todo: check for game end
+
+                Thread.sleep(5);
             }
 
             // update user records after the game ends
@@ -67,7 +73,7 @@ public class GameLobby implements Runnable {
             }
 
             serverSocket.close();
-        } catch (IOException e) {
+        } catch (IOException | InterruptedException e) {
             Log.println(e.getMessage());
         }
     }
@@ -89,21 +95,29 @@ public class GameLobby implements Runnable {
     /**
      * @param client
      */
-    public void addPlayerToLobby(GameClient client) {
-        if (clients.size() < 4) {
-            try {
-                clients.add(client);
-                client.getClientSocket().bind(new InetSocketAddress(serverSocket.getLocalPort()));
-                lobby.addPlayer(client.getUserID());
+    public boolean addPlayerToLobby(GameClient client) {
+        boolean success = false;
+        // synchronized to guarantee multiple clients don't get added to lobby at the same time
+        synchronized(this){
+            if (clients.size() < 4) {
+                try {
+                    clients.add(client);
+                    client.getClientSocket().bind(new InetSocketAddress(serverSocket.getLocalPort()));
+                    lobby.addPlayer(client.getUserID());
 
-                // assign a random character to the player when adding to lobby
-                int randomIndex = new Random().nextInt(availableCharacters.size());
-                client.getUser().setCharacter(availableCharacters.get(randomIndex));
-
-            } catch (IOException e) {
-                Log.println(e.getMessage());
+                    // assign a random character to the player when adding to lobby
+                    // maybe move this to start game method to guarantee monster with less than 4 total players?
+                    // todo: move character selection to start game to guarantee monster selection w/players < 4
+                    int randomIndex = new Random().nextInt(availableCharacters.size());
+                    client.getUser().setCharacter(availableCharacters.get(randomIndex));
+                    availableCharacters.remove(randomIndex);
+                    success = true;
+                } catch (IOException e) {
+                    Log.println(e.getMessage());
+                }
             }
         }
+        return success;
     }
 
     /**

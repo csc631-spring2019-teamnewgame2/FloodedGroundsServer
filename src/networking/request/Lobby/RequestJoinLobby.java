@@ -45,8 +45,9 @@ public class RequestJoinLobby extends GameRequest {
 
                 // retrieve GameLobbv and add player to it
                 GameLobby gameLobby = GameServer.getInstance().getGameLobbyByID(lobby.getPort());
-                gameLobby.addPlayerToLobby(GameServer.getInstance().getThreadByUserID(playerID));
                 responseJoinLobby.setPort(gameLobby.getPort());
+
+                gameLobby.addPlayerToLobby(GameServer.getInstance().getThreadByUserID(playerID));
             } else {
                 // lobby was full
                 responseJoinLobby.setStatus((short) 1);

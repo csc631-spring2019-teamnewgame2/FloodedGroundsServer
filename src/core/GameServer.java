@@ -51,6 +51,7 @@ public class GameServer {
     private GameServerConf configuration; // Stores server config. variables
     private ServerSocket serverSocket;
     private ExecutorService clientThreadPool;
+    private ExecutorService lobbyThreadPool;
 
     // Reference Tables
     private Map<String, GameClient> activeThreads = new HashMap<>(); // Session ID -> Client
@@ -72,10 +73,11 @@ public class GameServer {
             System.exit(-1);
         }
         freePorts = new ArrayList<>();
-        for(int i = 9000; i < 9010; i++)
+        for(int i = 9000; i < 9050; i++)
             freePorts.add(i);
         users = new ArrayList<>();
         clientThreadPool = Executors.newCachedThreadPool();
+        lobbyThreadPool = Executors.newCachedThreadPool();
 
         // todo: this is part of the bandaid fix
         availableCharacters = new ArrayList<>(Constants.characters.keySet());
