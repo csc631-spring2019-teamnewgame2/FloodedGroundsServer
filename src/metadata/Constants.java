@@ -41,9 +41,13 @@ public class Constants {
     public final static short CMSG_PICKUP = 140;
     public final static short SMSG_PICKUP = 240;
 
+    //Hit: x5x
+    public final static short CMSG_HIT = 150;
+    public final static short SMSG_HIT = 250;
+
     // Other
     public static final String CLIENT_VERSION = "1.00";
-    public static final int TIMEOUT_SECONDS = 10;
+    public static final int TIMEOUT_SECONDS = 15;
     public static final int maxUpdateNumber = 10000;
 
     //Characters

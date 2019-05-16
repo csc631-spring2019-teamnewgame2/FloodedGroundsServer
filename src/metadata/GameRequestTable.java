@@ -35,6 +35,7 @@ public class GameRequestTable {
         add(Constants.CMSG_JOINGAME, "RequestJoinGame");
 
         add(Constants.CMSG_PICKUP, "RequestPickup");
+        add(Constants.CMSG_HIT, "RequestHit");
     }
 
     /**
